@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sartaj Ahmed — UI/UX Designer & Web Developer</title>
+  <meta name="description"
+    content="I create modern, high-performing digital products, from websites to mobile apps, designed to captivate users and deliver measurable business growth.">
+  <meta name="keywords"
+    content="UI/UX Design, Webflow Developer, WordPress Developer, Product Designer, Sartaj Ahmed, Portfolio">
+  <meta name="author" content="Sartaj Ahmed Soomro">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sartaj Ahmed — UI/UX Designer & Web Developer">
+  <meta property="og:description"
+    content="UI/UX That Engages. Development That Delivers. Modern, high-performing digital products for ambitious brands.">
+  <meta property="og:image" content="https://sartajahmed.com/wp-content/uploads/2026/05/Group-1597883697.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23ff2a2a'/><text x='50%' y='55%' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='800' font-size='48' dy='.3em'>S</text></svg>">
+
+  <!-- Google Fonts: Space Grotesk (Headings) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- GSAP & ScrollTrigger Animation Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheet (cache-busted) -->
+  <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+
+<body>
+
+  <!-- ==================== TOP NAVIGATION BAR ==================== -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <!-- Brand Logo -->
+      <a href="#vision" class="brand-logo-link" aria-label="Sartaj Ahmed Home">
+        <span class="brand-logo-text">sartaj®</span>
+      </a>
+
+      <!-- Desktop Navigation Menu (No About) -->
+      <div class="nav-menu">
+        <a href="#home" class="nav-menu-link active">
+          <span class="nav-menu-dot"></span>
+          <span class="nav-text">Home</span>
+        </a>
+        <a href="#work" class="nav-menu-link">
+          <span class="nav-menu-dot"></span>
+          <span class="nav-text">Work</span>
+        </a>
+        <a href="#services" class="nav-menu-link">
+          <span class="nav-menu-dot"></span>
+          <span class="nav-text">Services</span>
+        </a>
+        <a href="#process" class="nav-menu-link">
+          <span class="nav-menu-dot"></span>
+          <span class="nav-text">Process</span>
+        </a>
+        <a href="#testimonials" class="nav-menu-link">
+          <span class="nav-menu-dot"></span>
+          <span class="nav-text">Reviews</span>
+        </a>
+        <a href="#faq" class="nav-menu-link">
+          <span class="nav-menu-dot"></span>
+          <span class="nav-text">FAQ</span>
+        </a>
+      </div>
+
+      <!-- Right Contact Action & Mobile Menu Button -->
+      <div class="navbar-right-action">
+        <a href="#contact" class="nav-button">
+          <span class="nav-button-dot"></span>
+          <span class="nav-button-text-wrap">
+            <span class="nav-button-text">Contact</span>
+            <span class="nav-button-text">Contact</span>
+          </span>
+        </a>
+
+        <button class="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu (No About) -->
+  <div class="mobile-nav-drawer" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-button" style="padding: 12px 32px; font-size: 1rem;">
+      <span class="nav-button-dot"></span>
+      <span class="nav-button-text-wrap">
+        <span class="nav-button-text">Let's Talk</span>
+        <span class="nav-button-text">Let's Talk</span>
+      </span>
+    </a>
+  </div>
+
+  <!-- ==================== 0. MONOF VISION STATEMENTS (SCROLL-PINNED INTRO SECTION) ==================== -->
+  <section id="vision" class="monof-vision-section">
+    <div class="monof-vision-sticky" id="monofVisionSticky">
+      <!-- Atmospheric Ambient Glow -->
+      <div class="vision-bg-glow" aria-hidden="true"></div>
+
+      <!-- Center Statements & Stylish Scroll Badge Directly Below -->
+      <div class="container vision-container">
+        <div class="vision-statements-wrapper" id="visionStatementsWrapper">
+          <h2 class="vision-statement active" data-index="0">Built Different</h2>
+          <h2 class="vision-statement" data-index="1">Design with purpose</h2>
+          <h2 class="vision-statement" data-index="2">Code with passion</h2>
+          <h2 class="vision-statement" data-index="3">Create with vision</h2>
+          <h2 class="vision-statement" data-index="4">Innovate always</h2>
+        </div>
+
+        <!-- Modern Stylish Scroll Indicator Directly Below Heading -->
+        <div class="vision-scroll-badge" id="visionScrollBadge">
+          <div class="scroll-badge-pill">
+            <span class="scroll-badge-dot"></span>
+            <span class="scroll-badge-text">Scroll to explore</span>
+            <span class="scroll-badge-arrow">↓</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Progress Dots Indicator -->
+      <div class="vision-progress-track" id="visionProgressTrack" aria-hidden="true">
+        <div class="vision-dot-pill active" data-step="0"></div>
+        <div class="vision-dot-pill" data-step="1"></div>
+        <div class="vision-dot-pill" data-step="2"></div>
+        <div class="vision-dot-pill" data-step="3"></div>
+        <div class="vision-dot-pill" data-step="4"></div>
+      </div>
+
+      <!-- ==================== EXPANDING WEBSITE HERO SECTION ==================== -->
+      <!-- Scales from center card to full screen on last scroll -->
+      <div class="hero-scale-frame" id="heroScaleFrame">
+        <div id="home" class="section-banner fixed">
+          <div class="fixed-banner">
+            <!-- Fullscreen Atmospheric Background Image Slider -->
+            <div class="hero-slider-v1">
+              <div class="hero-v1-mask">
+                <!-- Slide 1 (Exact Red Blonde Motion Portrait from Novasite) -->
+                <div class="hero-v1-slide-item active">
+                  <div class="hero-v1-slide-item-wrap">
+                    <img
+                      src="https://cdn.prod.website-files.com/6925368c84535d51ca6296ea/692581415d9dd72f224a2b6b_111014928a394176cdd98bc826b9853a_Rectangle%201%20%284%29.svg"
+                      alt="Atmospheric Red Motion Portrait" class="slider-image-wrap">
+                  </div>
+                </div>
+                <!-- Slide 2 (Sartaj Ahmed Red Smoke Portrait) -->
+                <div class="hero-v1-slide-item">
+                  <div class="hero-v1-slide-item-wrap">
+                    <img src="hero-red-smoke-portrait.jpg" alt="Sartaj Ahmed - Red Smoke Portrait"
+                      class="slider-image-wrap">
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="hero-v1-slide-item">
+                  <div class="hero-v1-slide-item-wrap">
+                    <img src="HerroRed2.png" alt="Crimson Light Portrait" class="slider-image-wrap">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Subtle Vignette & Gradient Overlays -->
+            <div class="banner-gradient-overlay" aria-hidden="true"></div>
+
+            <!-- Foreground Content Layer -->
+            <div class="banner-info">
+              <div class="container hero-container">
+                <div class="hero-content-wrapper">
+
+                  <!-- Top Content Row (Left Text & Right Capabilities List) -->
+                  <div class="hero-text-wrapper">
+                    <div class="hero-left-text">
+                      <p class="hero-text">
+                        I create modern, high-performing digital products, from websites to mobile apps, designed to
+                        captivate users and deliver measurable business growth.
+                      </p>
+                    </div>
+
+                    <div class="hero-right-text">
+                      <p class="hero-service-item">UI/UX Design</p>
+                      <p class="hero-service-item">Webflow Development</p>
+                      <p class="hero-service-item">WordPress Development</p>
+                      <p class="hero-service-item">Maintenance &amp; Optimization</p>
+                    </div>
+                  </div>
+
+                  <!-- Bottom Content Row (Huge NOVASITE / SARTAJ Text & Floating Slider V2) -->
+                  <div class="hero-bottom-content">
+                    <!-- Giant Bold Title & CTA -->
+                    <div class="hero-big-text-wrapper">
+                      <h1 class="hero-big-text"><span class="text-red">UI/UX</span> THAT ENGAGES.<br><span
+                          class="text-red">DEVELOPMENT</span> THAT<br><span class="text-red">DELIVERS.</span></h1>
+                      <div class="hero-action-row" style="margin-top: 24px;">
+                        <a href="#work" class="hero-cta-btn magnetic-btn">
+                          <span>See my portfolio</span>
+                          <span class="btn-arrow">↓</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Floating Secondary Card Preview Slider (Novasite Style) -->
+                    <div class="hero-slider-v2-wrap">
+                      <div class="slider-v2-wrapper">
+                        <div class="hero-slider-v2">
+                          <div class="hero-v2-mask">
+                            <!-- V2 Slide 1: Neon Eye Bar Portrait -->
+                            <div class="hero-v2-slide-item active">
+                              <div class="hero-v2-slide-item-wrap">
+                                <img
+                                  src="https://cdn.prod.website-files.com/6925368c84535d51ca6296ea/69259797d4952b76da2ce401_Rectangle%203.webp"
+                                  alt="Creative Portrait Preview" class="slider-img-v2">
+                              </div>
+                            </div>
+                            <!-- V2 Slide 2 (Sartaj Ahmed Red Smoke Portrait) -->
+                            <div class="hero-v2-slide-item">
+                              <div class="hero-v2-slide-item-wrap">
+                                <img src="hero-red-smoke-portrait.jpg" alt="Sartaj Ahmed Portrait Preview"
+                                  class="slider-img-v2">
+                              </div>
+                            </div>
+                            <!-- V2 Slide 3 -->
+                            <div class="hero-v2-slide-item">
+                              <div class="hero-v2-slide-item-wrap">
+                                <img src="HerroRed2.png" alt="Artwork Preview" class="slider-img-v2">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Countable 3-Line Progress Grid Indicator (Novasite Signature) -->
+                      <div class="countable-line-grid">
+                        <div class="line-block line-block-1" data-slide="0">
+                          <div class="inner-line inner-line-1"></div>
+                        </div>
+                        <div class="line-block line-block-2" data-slide="1">
+                          <div class="inner-line inner-line-2"></div>
+                        </div>
+                        <div class="line-block line-block-3" data-slide="2">
+                          <div class="inner-line inner-line-3"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== DUAL RUNNING CAPABILITIES TICKER ==================== -->
+  <section class="sponser-marquee-section">
+    <div class="sponser-logo-wrapper">
+      <div class="sponser-logo-wrap">
+        <div class="ticker-item">✦ UI/UX Design</div>
+        <div class="ticker-item">✦ Webflow Development</div>
+        <div class="ticker-item">✦ WordPress &amp; Elementor</div>
+        <div class="ticker-item">✦ Product Strategy</div>
+        <div class="ticker-item">✦ SaaS Dashboards</div>
+        <div class="ticker-item">✦ Brand Guidelines</div>
+        <div class="ticker-item">✦ Interaction Design</div>
+        <div class="ticker-item">✦ Prototyping</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 1. PROJECTS / WORK SECTION (FEATURED DEVELOPMENT) ==================== -->
+  <section id="work" class="section project-section">
+    <div class="container">
+      <!-- Split Header: Left Heading & Right Description -->
+      <div class="section-split-header">
+        <div class="split-header-left">
+          <div class="section-badge-pill">Featured Development // 06 Projects</div>
+          <h2 class="sub-heading">Engineered Websites,<br><span class="highlight-text">Measurable Success</span></h2>
+        </div>
+        <div class="split-header-right">
+          <p class="para-1">
+            Explore live WordPress &amp; Webflow client websites engineered for speed, conversion, and seamless digital
+            performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- Category Filter Navigation Bar -->
+      <div class="portfolio-filter-nav">
+        <div class="filter-tabs-wrapper">
+          <button class="filter-tab-btn active" data-filter="all">
+            <span class="tab-label">All Development</span>
+            <span class="tab-count">[06]</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="webflow">
+            <span class="tab-label">Webflow</span>
+            <span class="tab-count">[03]</span>
+          </button>
+          <button class="filter-tab-btn" data-filter="wordpress">
+            <span class="tab-label">WordPress</span>
+            <span class="tab-count">[03]</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Maxx Template Home-3 Stacking Cards Collection -->
+      <div class="work-stack-wrapper">
+
+        <!-- Project Webflow 1: Wello Solutions -->
+        <div class="work-stack-card" data-category="webflow" id="card-wello">
+          <a href="https://wellosolutions.com/" target="_blank" rel="noopener noreferrer" class="work-card-inner">
+            <div class="card-media-wrap">
+              <img src="https://sartajahmed.com/wp-content/uploads/2026/06/Screenshot-2026-06-30-205747.png"
+                alt="Wello Solutions" class="work-card-img" loading="lazy">
+              <div class="card-ambient-overlay"></div>
+            </div>
+            <div class="card-top-tags">
+              <div class="tag-pill category-pill">Webflow Development</div>
+              <div class="tag-pill year-pill">© 2026</div>
+            </div>
+            <div class="magnetic-center-badge">
+              <div class="circle-badge-inner">
+                <span class="circle-badge-text">VIEW PROJECT</span>
+                <span class="circle-badge-arrow">↗</span>
+              </div>
+            </div>
+            <div class="card-bottom-meta">
+              <div class="meta-text-col">
+                <h3 class="card-project-title">Wello Solutions</h3>
+                <p class="card-project-desc">Field Service &amp; Maintenance Management SaaS Web Platform</p>
+              </div>
+              <div class="meta-action-col">
+                <span class="meta-link-btn">Explore Live Site ↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project WordPress 1: Bonds Dobermans -->
+        <div class="work-stack-card" data-category="wordpress" id="card-bonds">
+          <a href="https://bondsdobermans.com/" target="_blank" rel="noopener noreferrer" class="work-card-inner">
+            <div class="card-media-wrap">
+              <img src="https://sartajahmed.com/wp-content/uploads/2026/06/Screenshot-2026-06-30-205344.png"
+                alt="Bonds Dobermans" class="work-card-img" loading="lazy">
+              <div class="card-ambient-overlay"></div>
+            </div>
+            <div class="card-top-tags">
+              <div class="tag-pill category-pill">WordPress Development</div>
+              <div class="tag-pill year-pill">© 2026</div>
+            </div>
+            <div class="magnetic-center-badge">
+              <div class="circle-badge-inner">
+                <span class="circle-badge-text">VIEW PROJECT</span>
+                <span class="circle-badge-arrow">↗</span>
+              </div>
+            </div>
+            <div class="card-bottom-meta">
+              <div class="meta-text-col">
+                <h3 class="card-project-title">Bonds Dobermans</h3>
+                <p class="card-project-desc">Luxury European Doberman Kennel &amp; Pedigree Reservation Portal</p>
+              </div>
+              <div class="meta-action-col">
+                <span class="meta-link-btn">Explore Live Site ↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project Webflow 2: EcomSwap -->
+        <div class="work-stack-card" data-category="webflow" id="card-ecomswap">
+          <a href="https://www.ecomswap.io/" target="_blank" rel="noopener noreferrer" class="work-card-inner">
+            <div class="card-media-wrap">
+              <img
+                src="https://iad.microlink.io/5beqgS_rg2ryb3QoTLC5U1CSSlMM-einjlYvxCKCG7_XqjKCTJrV_amqxp_w7GTbhWMb5HB__Z7xrMK8eb-mmg.png"
+                alt="EcomSwap" class="work-card-img" loading="lazy">
+              <div class="card-ambient-overlay"></div>
+            </div>
+            <div class="card-top-tags">
+              <div class="tag-pill category-pill">Webflow Development</div>
+              <div class="tag-pill year-pill">© 2026</div>
+            </div>
+            <div class="magnetic-center-badge">
+              <div class="circle-badge-inner">
+                <span class="circle-badge-text">VIEW PROJECT</span>
+                <span class="circle-badge-arrow">↗</span>
+              </div>
+            </div>
+            <div class="card-bottom-meta">
+              <div class="meta-text-col">
+                <h3 class="card-project-title">EcomSwap</h3>
+                <p class="card-project-desc">E-Commerce Brand Flipping &amp; Acquisition Marketplace</p>
+              </div>
+              <div class="meta-action-col">
+                <span class="meta-link-btn">Explore Live Site ↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project WordPress 2: LoyalTree Canada -->
+        <div class="work-stack-card" data-category="wordpress" id="card-loyaltree">
+          <a href="https://loyaltree.ca/" target="_blank" rel="noopener noreferrer" class="work-card-inner">
+            <div class="card-media-wrap">
+              <img src="https://sartajahmed.com/wp-content/uploads/2026/06/Screenshot-2026-06-30-204928.png"
+                alt="LoyalTree Canada" class="work-card-img" loading="lazy">
+              <div class="card-ambient-overlay"></div>
+            </div>
+            <div class="card-top-tags">
+              <div class="tag-pill category-pill">WordPress Development</div>
+              <div class="tag-pill year-pill">© 2026</div>
+            </div>
+            <div class="magnetic-center-badge">
+              <div class="circle-badge-inner">
+                <span class="circle-badge-text">VIEW PROJECT</span>
+                <span class="circle-badge-arrow">↗</span>
+              </div>
+            </div>
+            <div class="card-bottom-meta">
+              <div class="meta-text-col">
+                <h3 class="card-project-title">LoyalTree Canada</h3>
+                <p class="card-project-desc">Professional Arboriculture &amp; Tree Care Services in Ontario</p>
+              </div>
+              <div class="meta-action-col">
+                <span class="meta-link-btn">Explore Live Site ↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project Webflow 3: Cleenup Berlin -->
+        <div class="work-stack-card" data-category="webflow" id="card-cleenup">
+          <a href="https://cleenup.de/" target="_blank" rel="noopener noreferrer" class="work-card-inner">
+            <div class="card-media-wrap">
+              <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1400&q=80"
+                alt="Cleenup Berlin" class="work-card-img" loading="lazy">
+              <div class="card-ambient-overlay"></div>
+            </div>
+            <div class="card-top-tags">
+              <div class="tag-pill category-pill">Webflow Development</div>
+              <div class="tag-pill year-pill">© 2026</div>
+            </div>
+            <div class="magnetic-center-badge">
+              <div class="circle-badge-inner">
+                <span class="circle-badge-text">VIEW PROJECT</span>
+                <span class="circle-badge-arrow">↗</span>
+              </div>
+            </div>
+            <div class="card-bottom-meta">
+              <div class="meta-text-col">
+                <h3 class="card-project-title">Cleenup Berlin</h3>
+                <p class="card-project-desc">Professional Eco-Cleaning &amp; Commercial Facility Booking in Berlin</p>
+              </div>
+              <div class="meta-action-col">
+                <span class="meta-link-btn">Explore Live Site ↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project WordPress 3: Meghan Clor -->
+        <div class="work-stack-card" data-category="wordpress" id="card-meghan">
+          <a href="https://meghanclor.com/" target="_blank" rel="noopener noreferrer" class="work-card-inner">
+            <div class="card-media-wrap">
+              <img src="https://sartajahmed.com/wp-content/uploads/2026/06/Screenshot-2026-06-30-205224.png"
+                alt="Meghan Clor" class="work-card-img" loading="lazy">
+              <div class="card-ambient-overlay"></div>
+            </div>
+            <div class="card-top-tags">
+              <div class="tag-pill category-pill">WordPress Development</div>
+              <div class="tag-pill year-pill">© 2026</div>
+            </div>
+            <div class="magnetic-center-badge">
+              <div class="circle-badge-inner">
+                <span class="circle-badge-text">VIEW PROJECT</span>
+                <span class="circle-badge-arrow">↗</span>
+              </div>
+            </div>
+            <div class="card-bottom-meta">
+              <div class="meta-text-col">
+                <h3 class="card-project-title">Meghan Clor</h3>
+                <p class="card-project-desc">Transformative Spiritual Coaching &amp; Personal Growth Brand</p>
+              </div>
+              <div class="meta-action-col">
+                <span class="meta-link-btn">Explore Live Site ↗</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- View All Work CTA -->
+      <div class="work-bottom-cta">
+        <a href="projects.html?category=all" id="viewAllProjectsBtn" class="view-all-work-btn magnetic-btn">
+          <span id="viewAllBtnText">Explore All 24 Projects (Figma, Webflow, WordPress)</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. SERVICES SECTION ==================== -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-split-header">
+        <div class="split-header-left">
+          <div class="section-badge-pill">What We Do // Services</div>
+          <h2 class="sub-heading">Your Partner for<br><span class="highlight-text">UI/UX Design</span> &amp; Modern Web
+            Development</h2>
+        </div>
+        <div class="split-header-right">
+          <p class="para-1">
+            From website and app UI/UX design to WordPress and Webflow development, I craft intuitive digital
+            experiences that help businesses stand out and scale online.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cinemaflow Style Expandable Services Accordion -->
+      <div class="cinema-services-list" id="cinemaServicesList">
+        <!-- Service 1: UI UX Design (Active by default) -->
+        <div class="cinema-service-item is-active" data-service="1">
+          <div class="cinema-service-row">
+            <!-- Left: Title & Collapsible Details -->
+            <div class="cinema-service-left">
+              <div class="cinema-title-wrap">
+                <h3 class="cinema-service-title">UI UX Design</h3>
+                <span class="cinema-service-num">01</span>
+              </div>
+              <div class="cinema-service-details">
+                <p class="cinema-service-desc">
+                  User-centered, beautiful interfaces for web apps, SaaS dashboards, and mobile experiences crafted to
+                  engage and convert.
+                </p>
+                <div class="cinema-service-pills">
+                  <span class="cinema-pill">Mobile App Design</span>
+                  <span class="cinema-pill">SaaS Dashboards</span>
+                  <span class="cinema-pill">Wireframing</span>
+                  <span class="cinema-pill">Design Systems</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle: Smoothly Expanding Preview Image -->
+            <div class="cinema-service-center">
+              <div class="cinema-img-box">
+                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1200&q=80"
+                  alt="UI UX Design" class="cinema-service-img" loading="lazy">
+                <div class="cinema-img-overlay"></div>
+              </div>
+            </div>
+
+            <!-- Right: Arrow Icon -->
+            <div class="cinema-service-right">
+              <span class="cinema-arrow">→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Website Development -->
+        <div class="cinema-service-item" data-service="2">
+          <div class="cinema-service-row">
+            <!-- Left: Title & Collapsible Details -->
+            <div class="cinema-service-left">
+              <div class="cinema-title-wrap">
+                <h3 class="cinema-service-title">Website Development</h3>
+                <span class="cinema-service-num">02</span>
+              </div>
+              <div class="cinema-service-details">
+                <p class="cinema-service-desc">
+                  High-converting WordPress and Webflow websites crafted for speed, responsiveness, flexibility, and
+                  easy content management.
+                </p>
+                <div class="cinema-service-pills">
+                  <span class="cinema-pill">Custom WordPress</span>
+                  <span class="cinema-pill">Webflow CMS</span>
+                  <span class="cinema-pill">Figma to Production</span>
+                  <span class="cinema-pill">Core Web Vitals</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle: Smoothly Expanding Preview Image -->
+            <div class="cinema-service-center">
+              <div class="cinema-img-box">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+                  alt="Website Development" class="cinema-service-img" loading="lazy">
+                <div class="cinema-img-overlay"></div>
+              </div>
+            </div>
+
+            <!-- Right: Arrow Icon -->
+            <div class="cinema-service-right">
+              <span class="cinema-arrow">→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Maintenance & Optimization -->
+        <div class="cinema-service-item" data-service="3">
+          <div class="cinema-service-row">
+            <!-- Left: Title & Collapsible Details -->
+            <div class="cinema-service-left">
+              <div class="cinema-title-wrap">
+                <h3 class="cinema-service-title">Maintenance &amp; Optimization</h3>
+                <span class="cinema-service-num">03</span>
+              </div>
+              <div class="cinema-service-details">
+                <p class="cinema-service-desc">
+                  Keep your digital products operating at peak performance with continuous updates, technical
+                  optimization, and proactive enhancements.
+                </p>
+                <div class="cinema-service-pills">
+                  <span class="cinema-pill">Speed Tuning</span>
+                  <span class="cinema-pill">Security Audits</span>
+                  <span class="cinema-pill">Bug Fixes</span>
+                  <span class="cinema-pill">Monthly Support</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Middle: Smoothly Expanding Preview Image -->
+            <div class="cinema-service-center">
+              <div class="cinema-img-box">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                  alt="Maintenance &amp; Optimization" class="cinema-service-img" loading="lazy">
+                <div class="cinema-img-overlay"></div>
+              </div>
+            </div>
+
+            <!-- Right: Arrow Icon -->
+            <div class="cinema-service-right">
+              <span class="cinema-arrow">→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. HOW I WORK SECTION (PINNED SCROLL PROCESS) ==================== -->
+  <section id="process" class="section process-section roadmap-section">
+    <!-- Sticky Pinned Container for GSAP ScrollTrigger & Natural Pinning -->
+    <div class="roadmap-sticky-wrapper" id="roadmapStickyWrapper">
+      <!-- Clean Dark Subtle Tone Background (No image, pure modern CSS aesthetic) -->
+      <div class="roadmap-subtle-glow" aria-hidden="true"></div>
+      <div class="process-mesh-grid" aria-hidden="true"></div>
+
+      <div class="container roadmap-stage-container">
+        <div class="roadmap-layout-grid">
+          <!-- Left Column: Section Heading & Description -->
+          <div class="roadmap-left-col">
+            <div class="section-badge-pill">
+              <span class="badge-pulse-dot"></span>
+              HOW I WORK
+            </div>
+            <h2 class="sub-heading">My Proven Process<br><span class="highlight-text">for Better Digital Experiences</span></h2>
+            <p class="para-1 roadmap-desc">
+              From research to final delivery, we use a clear and strategic workflow to design and build digital
+              products that are efficient, scalable, and results-driven.
+            </p>
+          </div>
+
+          <!-- Right Column: Bento Cards Deck & Controls -->
+          <div class="roadmap-right-col">
+            <div class="roadmap-stage" id="roadmapStage">
+          <!-- Cards Deck Container: Holds the 5 vertical cards -->
+          <div class="roadmap-cards-deck" id="roadmapCardsDeck">
+
+            <!-- Milestone Card 01: Discovery -->
+            <div class="roadmap-card upcoming" data-card-index="0">
+              <div class="card-glow-spotlight"></div>
+              <div class="roadmap-card-header">
+                <div class="roadmap-card-meta">
+                  <span class="roadmap-phase-tag">Phase 01 // Strategy</span>
+                  <div class="roadmap-step-badge">01</div>
+                </div>
+                <div class="roadmap-card-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="roadmap-card-title">Discovery</h3>
+              <ul class="roadmap-card-list">
+                <li><span class="list-bullet">✦</span> <span>Free strategy call</span></li>
+                <li><span class="list-bullet">✦</span> <span>Understanding business goals</span></li>
+                <li><span class="list-bullet">✦</span> <span>Project scope &amp; requirements</span></li>
+                <li><span class="list-bullet">✦</span> <span>Timeline &amp; roadmap planning</span></li>
+              </ul>
+              <div class="roadmap-card-footer">
+                <span class="card-status-indicator">Initial Kickoff &amp; Strategic Alignment</span>
+                <span class="card-status-dot"></span>
+              </div>
+              <div class="card-bottom-glow-bar"></div>
+            </div>
+
+            <!-- Milestone Card 02: Research & UX Strategy -->
+            <div class="roadmap-card upcoming" data-card-index="1">
+              <div class="card-glow-spotlight"></div>
+              <div class="roadmap-card-header">
+                <div class="roadmap-card-meta">
+                  <span class="roadmap-phase-tag">Phase 02 // Insights</span>
+                  <div class="roadmap-step-badge">02</div>
+                </div>
+                <div class="roadmap-card-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="roadmap-card-title">Research &amp; UX Strategy</h3>
+              <ul class="roadmap-card-list">
+                <li><span class="list-bullet">✦</span> <span>User research &amp; interviews</span></li>
+                <li><span class="list-bullet">✦</span> <span>Competitor benchmarking</span></li>
+                <li><span class="list-bullet">✦</span> <span>User journey mapping</span></li>
+                <li><span class="list-bullet">✦</span> <span>Information architecture</span></li>
+              </ul>
+              <div class="roadmap-card-footer">
+                <span class="card-status-indicator">Architecture &amp; User Flow Mapping</span>
+                <span class="card-status-dot"></span>
+              </div>
+              <div class="card-bottom-glow-bar"></div>
+            </div>
+
+            <!-- Milestone Card 03: Wireframing & UI Design -->
+            <div class="roadmap-card upcoming" data-card-index="2">
+              <div class="card-glow-spotlight"></div>
+              <div class="roadmap-card-header">
+                <div class="roadmap-card-meta">
+                  <span class="roadmap-phase-tag">Phase 03 // Creative</span>
+                  <div class="roadmap-step-badge">03</div>
+                </div>
+                <div class="roadmap-card-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="roadmap-card-title">Wireframing &amp; UI Design</h3>
+              <ul class="roadmap-card-list">
+                <li><span class="list-bullet">✦</span> <span>Low-fidelity wireframes</span></li>
+                <li><span class="list-bullet">✦</span> <span>High-fidelity UI design</span></li>
+                <li><span class="list-bullet">✦</span> <span>Interactive clickable prototypes</span></li>
+                <li><span class="list-bullet">✦</span> <span>Design feedback &amp; revisions</span></li>
+              </ul>
+              <div class="roadmap-card-footer">
+                <span class="card-status-indicator">Visual Craft &amp; Interactive Experience</span>
+                <span class="card-status-dot"></span>
+              </div>
+              <div class="card-bottom-glow-bar"></div>
+            </div>
+
+            <!-- Milestone Card 04: Development -->
+            <div class="roadmap-card upcoming" data-card-index="3">
+              <div class="card-glow-spotlight"></div>
+              <div class="roadmap-card-header">
+                <div class="roadmap-card-meta">
+                  <span class="roadmap-phase-tag">Phase 04 // Build</span>
+                  <div class="roadmap-step-badge">04</div>
+                </div>
+                <div class="roadmap-card-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                    <line x1="14" y1="4" x2="10" y2="20"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="roadmap-card-title">Development</h3>
+              <ul class="roadmap-card-list">
+                <li><span class="list-bullet">✦</span> <span>WordPress / Webflow development</span></li>
+                <li><span class="list-bullet">✦</span> <span>Fully responsive optimization</span></li>
+                <li><span class="list-bullet">✦</span> <span>High performance &amp; SEO setup</span></li>
+                <li><span class="list-bullet">✦</span> <span>Custom CMS &amp; dynamic integrations</span></li>
+              </ul>
+              <div class="roadmap-card-footer">
+                <span class="card-status-indicator">Clean Code &amp; Scalable Engineering</span>
+                <span class="card-status-dot"></span>
+              </div>
+              <div class="card-bottom-glow-bar"></div>
+            </div>
+
+            <!-- Milestone Card 05: Launch & Support -->
+            <div class="roadmap-card upcoming" data-card-index="4">
+              <div class="card-glow-spotlight"></div>
+              <div class="roadmap-card-header">
+                <div class="roadmap-card-meta">
+                  <span class="roadmap-phase-tag">Phase 05 // Delivery</span>
+                  <div class="roadmap-step-badge">05</div>
+                </div>
+                <div class="roadmap-card-icon-wrap">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                    </path>
+                    <path
+                      d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                    </path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="roadmap-card-title">Launch &amp; Support</h3>
+              <ul class="roadmap-card-list">
+                <li><span class="list-bullet">✦</span> <span>Final QA &amp; cross-browser check</span></li>
+                <li><span class="list-bullet">✦</span> <span>Production website launch</span></li>
+                <li><span class="list-bullet">✦</span> <span>Asset &amp; documentation handoff</span></li>
+                <li><span class="list-bullet">✦</span> <span>Dedicated post-launch support</span></li>
+              </ul>
+              <div class="roadmap-card-footer">
+                <span class="card-status-indicator">Go Live &amp; Continuous Care</span>
+                <span class="card-status-dot"></span>
+              </div>
+              <div class="card-bottom-glow-bar"></div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Navigation Controls (Previous / Step Indicator Dots / Next) -->
+          <div class="roadmap-controls">
+            <button type="button" class="roadmap-nav-btn" id="roadmapPrevBtn" aria-label="Previous Step">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+            <div class="roadmap-dots-wrap" id="roadmapDotsWrap">
+              <button type="button" class="roadmap-dot" data-step="0" aria-label="Step 01 Discovery"></button>
+              <button type="button" class="roadmap-dot" data-step="1" aria-label="Step 02 Research"></button>
+              <button type="button" class="roadmap-dot" data-step="2" aria-label="Step 03 Design"></button>
+              <button type="button" class="roadmap-dot" data-step="3" aria-label="Step 04 Development"></button>
+              <button type="button" class="roadmap-dot" data-step="4" aria-label="Step 05 Launch"></button>
+            </div>
+            <button type="button" class="roadmap-nav-btn" id="roadmapNextBtn" aria-label="Next Step">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. CLIENT FEEDBACK / REVIEWS SECTION (MONOF-STYLE STICKY REVEAL) ==================== -->
+  <section id="testimonials" class="monof-testimonials-section">
+    <!-- Sticky Pinned Container for GSAP ScrollTrigger -->
+    <div class="monof-testimonials-sticky" id="monofTestiSticky">
+
+
+      <!-- Testimonials Stage Underneath -->
+      <div class="monof-testimonials-stage" id="monofTestiStage">
+        <div class="container monof-testi-container">
+          <div class="monof-testi-grid">
+
+            <!-- Left Column: Section Header & Metrics -->
+            <div class="monof-testi-left">
+              <div class="section-badge-pill">Client Testimonials</div>
+              <h2 class="sub-heading monof-testi-heading">
+                Why Agencies Choose Sartaj Ahmed:<br>
+                <span class="highlight-text">Clients Feedback</span>
+              </h2>
+              <p class="para-1 monof-testi-desc">
+                Real reviews from agency founders, directors, and tech leads who trusted us with their UI/UX and web
+                development challenges.
+              </p>
+              <div class="monof-testi-meta">
+                <div class="meta-stat-pill">
+                  <span class="meta-stat-val">100%</span>
+                  <span class="meta-stat-lbl">Job Success</span>
+                </div>
+                <div class="meta-stat-pill">
+                  <span class="meta-stat-val">5.0 ★</span>
+                  <span class="meta-stat-lbl">Agency Rating</span>
+                </div>
+              </div>
+              <div class="monof-scroll-hint-pill">
+                <span class="pulse-dot"></span>
+                <span>Scroll down to cycle reviews</span>
+              </div>
+            </div>
+
+            <!-- Right Column Group (7 columns): Monof Card Deck + Rotator -->
+            <div class="monof-testi-right-col">
+              <!-- Center Column: Monof Card Deck (Cards 1 to 7 Stacked) -->
+              <div class="monof-testi-center">
+                <div class="monof-cards-deck" id="monofCardsDeck">
+
+                  <!-- Card 01: UIEdgeStudio -->
+                  <article class="monof-card active" data-index="0">
+                    <div class="monof-card-header">
+                      <div class="client-brand-chip">
+                        <span class="brand-chip-icon">UE</span>
+                        <span class="brand-chip-name">UIEdgeStudio</span>
+                      </div>
+                      <div class="monof-stars-wrap">
+                        <span class="monof-stars">★★★★★</span>
+                        <span class="monof-score">5.0</span>
+                      </div>
+                    </div>
+                    <blockquote class="monof-quote">
+                      “Sartaj did a fantastic job designing my website interface. The UI is sleek, modern, and very easy
+                      to use. He really understands user behavior and design trends.”
+                    </blockquote>
+                    <div class="monof-card-footer">
+                      <div class="monof-author-wrap">
+                        <div class="monof-avatar" style="background: linear-gradient(135deg, #ff2a2a, #800000);">UE
+                        </div>
+                        <div class="monof-author-info">
+                          <h4 class="monof-author-name">UIEdgeStudio</h4>
+                          <p class="monof-author-role">Agency Director &bull; Design Systems</p>
+                        </div>
+                      </div>
+                      <span class="monof-verified-badge">✓ Verified Client</span>
+                    </div>
+                  </article>
+
+                  <!-- Card 02: SmartAppWorks -->
+                  <article class="monof-card" data-index="1">
+                    <div class="monof-card-header">
+                      <div class="client-brand-chip">
+                        <span class="brand-chip-icon">SA</span>
+                        <span class="brand-chip-name">SmartAppWorks</span>
+                      </div>
+                      <div class="monof-stars-wrap">
+                        <span class="monof-stars">★★★★★</span>
+                        <span class="monof-score">5.0</span>
+                      </div>
+                    </div>
+                    <blockquote class="monof-quote">
+                      “I’m immensely impressed with the app UI/UX design. Everything feels smooth and well-structured.
+                      Sartaj was quick to respond and delivered exactly what I needed.”
+                    </blockquote>
+                    <div class="monof-card-footer">
+                      <div class="monof-author-wrap">
+                        <div class="monof-avatar" style="background: linear-gradient(135deg, #2a4eff, #101c59);">SA
+                        </div>
+                        <div class="monof-author-info">
+                          <h4 class="monof-author-name">SmartAppWorks</h4>
+                          <p class="monof-author-role">Product Lead &bull; Mobile Platform</p>
+                        </div>
+                      </div>
+                      <span class="monof-verified-badge">✓ Verified Client</span>
+                    </div>
+                  </article>
+
+                  <!-- Card 03: DataFlowSystems -->
+                  <article class="monof-card" data-index="2">
+                    <div class="monof-card-header">
+                      <div class="client-brand-chip">
+                        <span class="brand-chip-icon">DF</span>
+                        <span class="brand-chip-name">DataFlowSystems</span>
+                      </div>
+                      <div class="monof-stars-wrap">
+                        <span class="monof-stars">★★★★★</span>
+                        <span class="monof-score">5.0</span>
+                      </div>
+                    </div>
+                    <blockquote class="monof-quote">
+                      “Professional, responsive, and highly skilled. The dashboard UI he designed is clean and easy to
+                      navigate. Great attention to UX details and developer handoff.”
+                    </blockquote>
+                    <div class="monof-card-footer">
+                      <div class="monof-author-wrap">
+                        <div class="monof-avatar" style="background: linear-gradient(135deg, #00b4d8, #005f73);">DF
+                        </div>
+                        <div class="monof-author-info">
+                          <h4 class="monof-author-name">DataFlowSystems</h4>
+                          <p class="monof-author-role">Engineering Manager &bull; Enterprise Analytics</p>
+                        </div>
+                      </div>
+                      <span class="monof-verified-badge">✓ Verified Client</span>
+                    </div>
+                  </article>
+
+                  <!-- Card 04: AppVisionary -->
+                  <article class="monof-card" data-index="3">
+                    <div class="monof-card-header">
+                      <div class="client-brand-chip">
+                        <span class="brand-chip-icon">AV</span>
+                        <span class="brand-chip-name">AppVisionary</span>
+                      </div>
+                      <div class="monof-stars-wrap">
+                        <span class="monof-stars">★★★★★</span>
+                        <span class="monof-score">5.0</span>
+                      </div>
+                    </div>
+                    <blockquote class="monof-quote">
+                      “Working with Sartaj was a great experience. He understood my app idea quickly and turned it into
+                      a smooth, modern UI design. Communication was excellent, and delivery was on time.”
+                    </blockquote>
+                    <div class="monof-card-footer">
+                      <div class="monof-author-wrap">
+                        <div class="monof-avatar" style="background: linear-gradient(135deg, #9d4edd, #3c096c);">AV
+                        </div>
+                        <div class="monof-author-info">
+                          <h4 class="monof-author-name">AppVisionary</h4>
+                          <p class="monof-author-role">Founder &amp; Tech Lead &bull; Mobile Experience</p>
+                        </div>
+                      </div>
+                      <span class="monof-verified-badge">✓ Verified Client</span>
+                    </div>
+                  </article>
+
+                  <!-- Card 05: Sarahzaza1 -->
+                  <article class="monof-card" data-index="4">
+                    <div class="monof-card-header">
+                      <div class="client-brand-chip">
+                        <span class="brand-chip-icon">SZ</span>
+                        <span class="brand-chip-name">Sarahzaza1 Studio</span>
+                      </div>
+                      <div class="monof-stars-wrap">
+                        <span class="monof-stars">★★★★★</span>
+                        <span class="monof-score">5.0</span>
+                      </div>
+                    </div>
+                    <blockquote class="monof-quote">
+                      “Sartaj did an amazing job with the UI/UX design! He understood the requirements perfectly,
+                      delivered high-quality, modern designs, and was super responsive throughout the process. Highly
+                      recommended!”
+                    </blockquote>
+                    <div class="monof-card-footer">
+                      <div class="monof-author-wrap">
+                        <div class="monof-avatar" style="background: linear-gradient(135deg, #f72585, #7209b7);">SZ
+                        </div>
+                        <div class="monof-author-info">
+                          <h4 class="monof-author-name">Sarahzaza1</h4>
+                          <p class="monof-author-role">Design Director &bull; Brand Experience</p>
+                        </div>
+                      </div>
+                      <span class="monof-verified-badge">✓ Verified Client</span>
+                    </div>
+                  </article>
+
+                  <!-- Card 06: Auralis Studio -->
+                  <article class="monof-card" data-index="5">
+                    <div class="monof-card-header">
+                      <div class="client-brand-chip">
+                        <span class="brand-chip-icon">AS</span>
+                        <span class="brand-chip-name">Auralis Studio</span>
+                      </div>
+                      <div class="monof-stars-wrap">
+                        <span class="monof-stars">★★★★★</span>
+                        <span class="monof-score">5.0</span>
+                      </div>
+                    </div>
+                    <blockquote class="monof-quote">
+                      “Working with Sartaj felt like having an elite lead designer on our internal team. His speed,
+                      aesthetic taste, and precision in both UI/UX and Webflow made our agency look world-class to
+                      clients.”
+                    </blockquote>
+                    <div class="monof-card-footer">
+                      <div class="monof-author-wrap">
+                        <div class="monof-avatar" style="background: linear-gradient(135deg, #06d6a0, #0b525b);">ER
+                        </div>
+                        <div class="monof-author-info">
+                          <h4 class="monof-author-name">Elena Rossi</h4>
+                          <p class="monof-author-role">Marketing Director &bull; Auralis Studio</p>
+                        </div>
+                      </div>
+                      <span class="monof-verified-badge">✓ Verified Client</span>
+                    </div>
+                  </article>
+
+                  <!-- Card 07: Kinetix Digital -->
+                  <article class="monof-card" data-index="6">
+                    <div class="monof-card-header">
+                      <div class="client-brand-chip">
+                        <span class="brand-chip-icon">KD</span>
+                        <span class="brand-chip-name">Kinetix Digital</span>
+                      </div>
+                      <div class="monof-stars-wrap">
+                        <span class="monof-stars">★★★★★</span>
+                        <span class="monof-score">5.0</span>
+                      </div>
+                    </div>
+                    <blockquote class="monof-quote">
+                      “From component design systems to responsive development, Sartaj is 10/10. Conversions increased
+                      by 42% on our new marketing platform after launch. He is our trusted partner for digital
+                      excellence.”
+                    </blockquote>
+                    <div class="monof-card-footer">
+                      <div class="monof-author-wrap">
+                        <div class="monof-avatar" style="background: linear-gradient(135deg, #e63946, #450920);">MV
+                        </div>
+                        <div class="monof-author-info">
+                          <h4 class="monof-author-name">Marcus Vance</h4>
+                          <p class="monof-author-role">VP of Product &bull; Kinetix Digital</p>
+                        </div>
+                      </div>
+                      <span class="monof-verified-badge">✓ Verified Client</span>
+                    </div>
+                  </article>
+
+                </div>
+              </div>
+
+              <!-- Right Column: Monof Number Rotator & Dot Controls -->
+              <div class="monof-testi-right">
+                <div class="monof-rotator-card">
+                  <div class="monof-number-rotator">
+                    <div class="monof-number-window">
+                      <div class="monof-number-reel" id="monofNumberReel">
+                        <span class="rotator-num">01</span>
+                        <span class="rotator-num">02</span>
+                        <span class="rotator-num">03</span>
+                        <span class="rotator-num">04</span>
+                        <span class="rotator-num">05</span>
+                        <span class="rotator-num">06</span>
+                        <span class="rotator-num">07</span>
+                      </div>
+                    </div>
+                    <span class="rotator-total">/07</span>
+                  </div>
+                  <div class="monof-rotator-label">Active Review</div>
+
+                  <!-- Navigation Dots for Direct Click -->
+                  <div class="monof-dots-nav" id="monofDotsNav" aria-label="Testimonials Navigation">
+                    <button class="monof-dot-btn active" data-target="0" aria-label="Review 1"></button>
+                    <button class="monof-dot-btn" data-target="1" aria-label="Review 2"></button>
+                    <button class="monof-dot-btn" data-target="2" aria-label="Review 3"></button>
+                    <button class="monof-dot-btn" data-target="3" aria-label="Review 4"></button>
+                    <button class="monof-dot-btn" data-target="4" aria-label="Review 5"></button>
+                    <button class="monof-dot-btn" data-target="5" aria-label="Review 6"></button>
+                    <button class="monof-dot-btn" data-target="6" aria-label="Review 7"></button>
+                  </div>
+
+                  <!-- Arrow Nav for Manual Cycling -->
+                  <div class="monof-arrow-nav">
+                    <button class="monof-nav-arrow" id="monofPrevBtn" aria-label="Previous review">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                    <button class="monof-nav-arrow" id="monofNextBtn" aria-label="Next review">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.monof-testi-right-col -->
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== 5. FAQ SECTION ==================== -->
+  <section id="faq" class="section faq-section">
+    <div class="container">
+      <div class="faq-layout-grid">
+
+        <!-- Left Column (4 columns) -->
+        <div class="faq-left-col">
+          <div class="faq-left-sticky">
+            <div class="section-badge-pill">Got Questions?</div>
+            <h2 class="sub-heading">Frequently Asked<br><span class="highlight-text">Questions</span></h2>
+            <p class="faq-left-desc">
+              Have questions about how we work, project timelines, or custom scopes? Here are the most common questions
+              answered.
+            </p>
+            <div class="faq-left-cta">
+              <a href="#contact" class="nav-button">
+                <span class="nav-button-dot"></span>
+                <span class="nav-button-text-wrap">
+                  <span class="nav-button-text">Have a Question?</span>
+                  <span class="nav-button-text">Have a Question?</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column (7 columns) -->
+        <div class="faq-right-col">
+          <div class="faq-accordion-list">
+            <!-- Q1 -->
+            <div class="faq-accordion-item open">
+              <div class="faq-item-trigger">
+                <h3 class="faq-item-title">What do you need from me to get started?</h3>
+                <span class="faq-item-icon">−</span>
+              </div>
+              <div class="faq-item-body">
+                <p class="faq-item-answer">
+                  Just share your project goals, any references you like, your brand guidelines, and a brief description
+                  of what you need, whether it's a SaaS platform, landing page, or dashboard. Screenshots or existing
+                  content are always helpful but not required.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="faq-accordion-item">
+              <div class="faq-item-trigger">
+                <h3 class="faq-item-title">Will the design work on mobile and tablet too?</h3>
+                <span class="faq-item-icon">+</span>
+              </div>
+              <div class="faq-item-body">
+                <p class="faq-item-answer">
+                  Yes. Every design I deliver is fully responsive, optimized for desktop, tablet, and mobile. Your users
+                  will get a seamless experience across all devices.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="faq-accordion-item">
+              <div class="faq-item-trigger">
+                <h3 class="faq-item-title">Can you follow my existing brand or start fresh?</h3>
+                <span class="faq-item-icon">+</span>
+              </div>
+              <div class="faq-item-body">
+                <p class="faq-item-answer">
+                  Both. I can work within your existing brand guidelines to maintain consistency, or create a completely
+                  new design system from scratch, modern, clean, and tailored to your business.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="faq-accordion-item">
+              <div class="faq-item-trigger">
+                <h3 class="faq-item-title">How many revisions do I get?</h3>
+                <span class="faq-item-icon">+</span>
+              </div>
+              <div class="faq-item-body">
+                <p class="faq-item-answer">
+                  Revisions are included until the design fully matches your vision and the agreed scope. I don't rush
+                  the process, the goal is that you're 100% happy with the final result.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="faq-accordion-item">
+              <div class="faq-item-trigger">
+                <h3 class="faq-item-title">How long does a project typically take?</h3>
+                <span class="faq-item-icon">+</span>
+              </div>
+              <div class="faq-item-body">
+                <p class="faq-item-answer">
+                  It depends on the scope. A landing page is usually ready in 3–5 days. A full SaaS product or dashboard
+                  takes 2–4 weeks. I'll give you a clear timeline before we start so there are no surprises.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="faq-accordion-item">
+              <div class="faq-item-trigger">
+                <h3 class="faq-item-title">What does it cost?</h3>
+                <span class="faq-item-icon">+</span>
+              </div>
+              <div class="faq-item-body">
+                <p class="faq-item-answer">
+                  Pricing depends on project complexity and scope. Projects start from $300. Send me a message with your
+                  project details and I'll get back to you with a custom quote within 24 hours, no obligation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="faq-accordion-item">
+              <div class="faq-item-trigger">
+                <h3 class="faq-item-title">Still have a question?</h3>
+                <span class="faq-item-icon">+</span>
+              </div>
+              <div class="faq-item-body">
+                <p class="faq-item-answer">
+                  Feel free to reach out directly, I usually respond within a few hours. You can message me on LinkedIn
+                  or send an email. I'm happy to jump on a quick call if needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. CONTACT SECTION ==================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-card-wrapper">
+        <div class="contact-card-grid">
+          <!-- Left Info Column -->
+          <div class="contact-info-col">
+            <div class="section-badge-pill">Let's Connect</div>
+            <h2 class="sub-heading">Let’s Talk<br><span class="highlight-text">About Your Project</span></h2>
+            <p class="para-1" style="margin: 20px 0 36px;">
+              Tell us what you’re building. We design and build high-quality digital products globally.
+            </p>
+
+            <div class="direct-contact-items">
+              <a href="mailto:contact@sartajahmed.com" class="direct-badge-link">
+                <span class="direct-icon-wrap" style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 42, 42, 0.12); border: 1px solid rgba(255, 42, 42, 0.28); display: inline-flex; align-items: center; justify-content: center; color: var(--accent-red); flex-shrink: 0;" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </span>
+                <span class="badge-text">contact@sartajahmed.com</span>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=18038233442" target="_blank" rel="noopener noreferrer"
+                class="direct-badge-link">
+                <span class="direct-icon-wrap" style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255, 42, 42, 0.12); border: 1px solid rgba(255, 42, 42, 0.28); display: inline-flex; align-items: center; justify-content: center; color: var(--accent-red); flex-shrink: 0;" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.275-.1-.475-.15-.675.15-.2.301-.776.979-.951 1.18-.175.2-.351.226-.652.075-1.921-.96-3.176-2.147-3.95-3.483-.2-.345.2-.32.57-.96.088-.15.044-.282-.022-.432-.066-.15-.675-1.63-.925-2.233-.243-.588-.49-.508-.675-.518-.175-.008-.375-.01-.576-.01-.2 0-.525.075-.8.375-.275.301-1.05 1.028-1.05 2.506 0 1.478 1.076 2.906 1.226 3.107.15.2 2.117 3.232 5.129 4.534 2.138.925 2.977.892 4.025.736.804-.12 1.78-.727 2.032-1.43.251-.703.251-1.305.176-1.43-.075-.125-.276-.2-.577-.35m-5.452 7.41c-2.08 0-4.04-.61-5.702-1.662l-.409-.26-4.24 1.112 1.132-4.133-.284-.452A9.71 9.71 0 0 1 1.02 12.02c0-5.38 4.38-9.76 9.76-9.76 2.61 0 5.06 1.017 6.904 2.863a9.71 9.71 0 0 1 2.857 6.897c0 5.38-4.38 9.76-9.76 9.76m8.29-16.58A11.66 11.66 0 0 0 12.02.5C5.66.5.5 5.66.5 12.02c0 2.035.53 4.02 1.54 5.768L0 23.5l5.88-1.54a11.65 11.65 0 0 0 5.64 1.44h.01c6.36 0 11.52-5.16 11.52-11.52 0-3.08-1.2-5.97-3.37-8.15z"/>
+                  </svg>
+                </span>
+                <span class="badge-text">+1 (803) 823-3442</span>
+              </a>
+            </div>
+
+            <!-- Social Media Badges -->
+            <div class="contact-socials-wrap">
+              <a href="https://www.linkedin.com/in/sartajahmedsoomro046/" target="_blank" rel="noopener noreferrer"
+                class="social-pill-link" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;" aria-label="LinkedIn" title="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                </svg>
+              </a>
+              <a href="https://www.behance.net/asartaj140" target="_blank" rel="noopener noreferrer"
+                class="social-pill-link" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;" aria-label="Behance" title="Behance">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-4.726 3-3.149 0-5.46-2.128-5.46-5.485 0-3.356 2.311-5.515 5.46-5.515 3.125 0 4.966 2.159 4.966 5.515v1.485h-7.66c.148 1.631 1.432 2.375 2.694 2.375 1.287 0 1.98-.594 2.327-1.375h2.399zm-2.42-3.485c-.098-1.282-1.042-2.015-2.28-2.015-1.238 0-2.182.733-2.28 2.015h4.56zm-13.306 6.485h-7.5v-14h7.121c2.193 0 4.129 1.157 4.129 3.447 0 1.341-.715 2.502-1.79 3.033 1.433.518 2.29 1.83 2.29 3.52 0 2.474-1.996 4-4.25 4zm-4.75-8.25h3.875c1.173 0 2.125-.698 2.125-1.875 0-1.177-.952-1.875-2.125-1.875h-3.875v3.75zm0 2.25v4h4.125c1.243 0 2.25-.757 2.25-2s-1.007-2-2.25-2h-4.125z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/sartajuiux/" target="_blank" rel="noopener noreferrer"
+                class="social-pill-link" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;" aria-label="Instagram" title="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/sartajuiux" target="_blank" rel="noopener noreferrer"
+                class="social-pill-link" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;" aria-label="Facebook" title="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                class="social-pill-link" style="width: 44px; height: 44px; padding: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;" aria-label="GitHub" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Inquiry Form -->
+          <div class="contact-form-col">
+            <form id="mainContactForm" class="interactive-contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-field-wrap">
+                  <label for="contactName" class="input-label">Hi, I’m</label>
+                  <input type="text" id="contactName" class="custom-input" placeholder="Your name or agency*" required>
+                </div>
+                <div class="form-field-wrap">
+                  <label for="contactHelp" class="input-label">I need help with</label>
+                  <input type="text" id="contactHelp" class="custom-input" placeholder="e.g. Website, UI/UX, SaaS..."
+                    required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field-wrap">
+                  <label for="contactBudget" class="input-label">Budget range</label>
+                  <select id="contactBudget" class="custom-input select-input">
+                    <option value="" disabled selected>Select budget range</option>
+                    <option value="$300 - $500">$300 – $500</option>
+                    <option value="$500 - $1,000">$500 – $1,000</option>
+                    <option value="$1,000 - $2,500">$1,000 – $2,500</option>
+                    <option value="$2,500 - $5,000">$2,500 – $5,000</option>
+                    <option value="$5,000+">$5,000+</option>
+                  </select>
+                </div>
+                <div class="form-field-wrap">
+                  <label for="contactEmail" class="input-label">Email</label>
+                  <input type="email" id="contactEmail" class="custom-input" placeholder="Your email address*" required>
+                </div>
+              </div>
+
+              <div class="form-field-wrap full-width">
+                <label for="contactMessage" class="input-label">Additional info?</label>
+                <textarea id="contactMessage" class="custom-input textarea-input" rows="4"
+                  placeholder="Tell us what you're building, timeline..." required></textarea>
+              </div>
+
+              <button type="submit" class="contact-submit-btn magnetic-btn">
+                <span>Get in Touch</span>
+                <span class="btn-arrow">→</span>
+              </button>
+
+              <div id="contactFormStatus" class="form-status-box"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. FULL-WIDTH CTA SECTION ==================== -->
+  <section class="cta-fullwidth-section" id="cta-banner">
+    <div class="cta-gradient-overlay"></div>
+    <div class="cta-inner-container">
+      <div class="section-badge-pill cta-badge">Let's Collaborate</div>
+      <h2 class="cta-banner-heading">Ready to Build Something Great?<br><span class="highlight-text">Let's Talk.</span></h2>
+      <p class="cta-banner-para">
+        Embark on a Journey with Me: Experience a transformative web design &amp; development partnership that redefines
+        your digital presence.
+      </p>
+      <div class="cta-banner-action">
+        <a href="#contact" class="cta-banner-button magnetic-btn">
+          <span>Get Started</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. FOOTER SECTION ==================== -->
+  <footer class="section footer-section">
+    <!-- Main Footer Links & Copyright -->
+    <div class="container footer-bottom-container">
+      <div class="footer-columns-grid">
+        <div class="footer-col-brand">
+          <a href="#home" class="brand-logo-link">
+            <span class="brand-logo-text">sartaj®</span>
+          </a>
+          <p class="footer-brand-bio">
+            Creating modern, high-performing digital products, from websites to mobile apps, designed to captivate users
+            and deliver business growth.
+          </p>
+        </div>
+
+        <div class="footer-col-nav">
+          <div class="footer-nav-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-nav">
+          <div class="footer-nav-title">Socials</div>
+          <ul class="footer-links-list">
+            <li><a href="https://www.linkedin.com/in/sartajahmedsoomro046/" target="_blank"
+                rel="noopener noreferrer">LinkedIn ↗</a></li>
+            <li><a href="https://www.behance.net/asartaj140" target="_blank" rel="noopener noreferrer">Behance ↗</a>
+            </li>
+            <li><a href="https://www.instagram.com/sartajuiux/" target="_blank" rel="noopener noreferrer">Instagram
+                ↗</a></li>
+            <li><a href="https://www.facebook.com/sartajuiux" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            </li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-newsletter">
+          <div class="footer-nav-title">Stay Connected</div>
+          <p class="footer-news-text">Direct email for proposals &amp; collaborations:</p>
+          <a href="mailto:contact@sartajahmed.com" class="footer-email-link">contact@sartajahmed.com</a>
+        </div>
+      </div>
+
+      <div class="footer-legal-bar">
+        <div class="footer-legal-copy">© 2026 Sartaj Ahmed Soomro. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Terms &amp; Conditions</a>
+          <span class="sep">•</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Giant Running Watermark Marquee -->
+    <div class="footer-bottom-marquee" aria-hidden="true">
+      <div class="footer-bottom-text-wrapper">
+        <h1 class="footer-bottom-text">SARTAJ®</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">UI/UX DESIGN</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">DEVELOPMENT</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">WEBFLOW</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">WORDPRESS</h1>
+        <h1 class="footer-bottom-text">—</h1>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js?v=4.0"></script>
+</body>
+
+</html>

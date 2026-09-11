@@ -1,0 +1,19 @@
+# Backup / scratch files — do not deploy
+*.backup.html
+*.backup.css
+*.backup_step.html
+*.backup_step.css
+*.pre_contact_fix.html
+*.pre_contact_fix.css
+create_projects_page.py
+maxx.css
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
