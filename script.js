@@ -480,7 +480,7 @@ function initGsapProjectStacking() {
 }
 
 /* ----------------------------------------------------
-   6. Portfolio Category Filter Tabs (5 Projects Limit on Homepage)
+   6. Portfolio Category Filter Tabs (4 Projects Limit on Homepage)
    ---------------------------------------------------- */
 function initProjectFilterTabs() {
   const tabBtns = document.querySelectorAll('.filter-tab-btn');
@@ -498,7 +498,7 @@ function initProjectFilterTabs() {
     const visibleCardIds = new Set();
 
     if (filter === 'all') {
-      // Show all 6 featured development websites (3 Webflow + 3 WordPress)
+      // Show all 4 featured development websites (2 Webflow + 2 WordPress)
       cards.forEach(c => visibleCardIds.add(c.id));
     } else {
       // Filter by selected category (webflow or wordpress)
@@ -524,13 +524,13 @@ function initProjectFilterTabs() {
     if (viewAllBtn && viewAllBtnText) {
       if (filter === 'all') {
         viewAllBtn.href = 'projects.html?category=all';
-        viewAllBtnText.textContent = 'Explore All 24 Projects (Figma, Webflow, WordPress)';
+        viewAllBtnText.textContent = 'Explore All Projects (Webflow, WordPress, Figma)';
       } else if (filter === 'webflow') {
         viewAllBtn.href = 'projects.html?category=webflow';
-        viewAllBtnText.textContent = 'Explore All Webflow Projects (8)';
+        viewAllBtnText.textContent = 'Explore All Webflow Projects (14)';
       } else if (filter === 'wordpress') {
         viewAllBtn.href = 'projects.html?category=wordpress';
-        viewAllBtnText.textContent = 'Explore All WordPress Projects (8)';
+        viewAllBtnText.textContent = 'Explore All WordPress Projects (25)';
       }
     }
 
