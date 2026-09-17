@@ -1190,7 +1190,7 @@ function initFaqAccordion() {
 }
 
 /* ----------------------------------------------------
-   9. Contact Form Handling
+   9. Contact Form Handling (Dynamic Delivery to contact@sartajahmed.com)
    ---------------------------------------------------- */
 function initContactForm() {
   const form = document.getElementById('mainContactForm');
@@ -1198,54 +1198,232 @@ function initContactForm() {
 
   if (!form) return;
 
-  form.addEventListener('submit', e => {
+  const nameInput = document.getElementById('contactName');
+  const helpSelect = document.getElementById('contactHelp');
+  const budgetSelect = document.getElementById('contactBudget');
+  const emailInput = document.getElementById('contactEmail');
+  const messageInput = document.getElementById('contactMessage');
+  const formSubject = document.getElementById('formSubject');
+
+  // Helper: Escape HTML to prevent injection
+  function escapeHtml(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  // Clear invalid indicators on input
+  [nameInput, helpSelect, budgetSelect, emailInput, messageInput].forEach(field => {
+    if (!field) return;
+    const evt = field.tagName === 'SELECT' ? 'change' : 'input';
+    field.addEventListener(evt, () => {
+      field.classList.remove('is-invalid');
+    });
+  });
+
+  form.addEventListener('submit', async e => {
     e.preventDefault();
 
-    const name = document.getElementById('contactName')?.value.trim();
-    const email = document.getElementById('contactEmail')?.value.trim();
-    const help = document.getElementById('contactHelp')?.value.trim();
-    const budget = document.getElementById('contactBudget')?.value;
-    const message = document.getElementById('contactMessage')?.value.trim();
+    const statusBox = document.getElementById('contactFormStatus');
 
-    if (!name || !email) {
+    // Check if opened via local file protocol
+    if (window.location.protocol === 'file:') {
       if (statusBox) {
-        statusBox.className = 'form-status-box';
+        statusBox.className = 'form-status-box status-warning';
         statusBox.style.display = 'block';
-        statusBox.style.background = 'rgba(255, 42, 42, 0.15)';
-        statusBox.style.border = '1px solid rgba(255, 42, 42, 0.3)';
-        statusBox.style.color = '#ff4242';
-        statusBox.style.padding = '12px 18px';
-        statusBox.style.borderRadius = '8px';
-        statusBox.style.marginTop = '16px';
-        statusBox.textContent = 'Please provide your name and a valid email address.';
+        statusBox.innerHTML = `
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <div>
+              <strong style="color: #ffffff; font-size: 1.05rem; display: block; margin-bottom: 4px;">Local File Mode Detected</strong>
+              <span>Form submission requires a web server to send emails and prevent spam. Please open the portfolio via your active local server:</span>
+              <div style="margin-top: 10px;">
+                <a href="http://localhost:8080/#contact" style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 20px; background: #ff2a2a; color: #ffffff; border-radius: 9999px; font-weight: 700; font-size: 0.88rem; text-decoration: none;">
+                  Open via Localhost:8080 →
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      return;
+    }
+
+    const name = nameInput?.value.trim() || '';
+    const help = helpSelect?.value.trim() || '';
+    const budget = budgetSelect?.value.trim() || '';
+    const email = emailInput?.value.trim() || '';
+    const message = messageInput?.value.trim() || '';
+
+    let hasError = false;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Validate fields
+    if (!name || name.length < 2) {
+      nameInput?.classList.add('is-invalid');
+      hasError = true;
+    }
+    if (!help) {
+      helpSelect?.classList.add('is-invalid');
+      hasError = true;
+    }
+    if (!budget) {
+      budgetSelect?.classList.add('is-invalid');
+      hasError = true;
+    }
+    if (!email || !emailRegex.test(email)) {
+      emailInput?.classList.add('is-invalid');
+      hasError = true;
+    }
+    if (!message || message.length < 5) {
+      messageInput?.classList.add('is-invalid');
+      hasError = true;
+    }
+
+    if (hasError) {
+      if (statusBox) {
+        statusBox.className = 'form-status-box status-error';
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <span>Please fill in all required fields marked with * with valid information.</span>
+          </div>
+        `;
       }
       return;
     }
 
     const submitBtn = form.querySelector('.contact-submit-btn');
-    const originalText = submitBtn.innerHTML;
+    const originalBtnHtml = submitBtn.innerHTML;
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span>Sending Message...</span>';
+    submitBtn.innerHTML = '<span class="spinner-icon"></span><span>Sending to Sartaj...</span>';
 
-    setTimeout(() => {
+    if (statusBox) {
+      statusBox.className = 'form-status-box status-loading';
+      statusBox.style.display = 'block';
+      statusBox.innerHTML = `
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="spinner-icon"></span>
+          <span>Transmitting inquiry to <strong>contact@sartajahmed.com</strong>...</span>
+        </div>
+      `;
+    }
+
+    // Update dynamic subject
+    const subjectLine = `New Project Inquiry: [${help}] from ${name}`;
+    if (formSubject) formSubject.value = subjectLine;
+
+    const payload = {
+      name: name,
+      email: email,
+      _replyto: email,
+      service: help,
+      budget: budget,
+      message: message,
+      _subject: subjectLine,
+      _template: 'table',
+      _captcha: 'false',
+      _autoresponse: 'Thank you for reaching out to Sartaj Ahmed! I have received your message and will review your project details and get back to you shortly.'
+    };
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/contact@sartajahmed.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json().catch(() => ({}));
       submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
-      if (statusBox) {
-        statusBox.className = 'form-status-box success';
-        statusBox.style.display = 'block';
-        statusBox.style.background = 'rgba(40, 200, 100, 0.15)';
-        statusBox.style.border = '1px solid rgba(40, 200, 100, 0.3)';
-        statusBox.style.color = '#4ade80';
-        statusBox.style.padding = '12px 18px';
-        statusBox.style.borderRadius = '8px';
-        statusBox.style.marginTop = '16px';
-        statusBox.textContent = `Thank you, ${name}! Your inquiry regarding "${help || 'your project'}" has been received. Sartaj will get in touch shortly.`;
-      }
-      form.reset();
+      submitBtn.innerHTML = originalBtnHtml;
 
-      setTimeout(() => {
-        if (statusBox) statusBox.style.display = 'none';
-      }, 6000);
-    }, 900);
+      const isActivation = data.message && /activat/i.test(data.message);
+      const isSuccess = (response.ok && data.success !== 'false') || (data.success === 'true' || data.success === true);
+
+      if (isSuccess && !isActivation) {
+        if (statusBox) {
+          statusBox.className = 'form-status-box status-success';
+          statusBox.style.display = 'block';
+          statusBox.innerHTML = `
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <div>
+                <strong style="color: #ffffff; font-size: 1.05rem; display: block; margin-bottom: 4px;">Inquiry Sent Successfully!</strong>
+                <span>Thank you, <strong>${escapeHtml(name)}</strong>. Your request for <strong>${escapeHtml(help)}</strong> (Budget: <strong>${escapeHtml(budget)}</strong>) has been forwarded directly to <strong>contact@sartajahmed.com</strong>. Sartaj will get in touch shortly.</span>
+              </div>
+            </div>
+          `;
+        }
+
+        form.reset();
+      } else if (isActivation) {
+        if (statusBox) {
+          statusBox.className = 'form-status-box status-activation';
+          statusBox.style.display = 'block';
+          statusBox.innerHTML = `
+            <div style="display: flex; align-items: flex-start; gap: 12px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <div>
+                <strong style="color: #ffffff; font-size: 1.05rem; display: block; margin-bottom: 4px;">One-Time Email Activation Sent!</strong>
+                <p style="margin: 0 0 8px; color: #bae6fd;">FormSubmit has sent a 1-time verification email to <strong style="color: #ffffff;">contact@sartajahmed.com</strong>.</p>
+                <p style="margin: 0; color: #e0f2fe; font-size: 0.92rem;">👉 <strong>Apni email (contact@sartajahmed.com) inbox ya Spam folder me jayein aur "Activate Form" button par 1 baar click kar dein.</strong> Activate hote hi aapka form live ho jayega aur yeh inquiry aur saari future inquiries seedha aapki email par aayengi!</p>
+              </div>
+            </div>
+          `;
+        }
+      } else {
+        throw new Error(data.message || 'Submission was not completed.');
+      }
+    } catch (err) {
+      console.warn('Direct submission notice:', err);
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnHtml;
+
+      const mailtoUrl = `mailto:contact@sartajahmed.com?subject=${encodeURIComponent(subjectLine)}&body=${encodeURIComponent(
+        `Hi Sartaj,\n\nName: ${name}\nService: ${help}\nBudget: ${budget}\nEmail: ${email}\n\nProject Details:\n${message}`
+      )}`;
+
+      if (statusBox) {
+        statusBox.className = 'form-status-box status-error';
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `
+          <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <div>
+              <strong style="color: #ffffff; font-size: 1rem; display: block; margin-bottom: 4px;">Gateway Notice</strong>
+              <span>${escapeHtml(err.message || 'Unable to connect to submission gateway.')}</span>
+              <div style="margin-top: 10px;">
+                <a href="${mailtoUrl}" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #ffffff; color: #111111; border-radius: 9999px; font-weight: 700; font-size: 0.85rem; text-decoration: none;">
+                  Open Mail App to contact@sartajahmed.com →
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    }
   });
 }

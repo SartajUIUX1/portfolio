@@ -34,7 +34,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
   <!-- Stylesheet (cache-busted) -->
-  <link rel="stylesheet" href="style.css?v=4.0">
+  <link rel="stylesheet" href="style.css?v=4.1">
 </head>
 
 <body>
@@ -1321,24 +1321,40 @@
 
           <!-- Right Interactive Inquiry Form -->
           <div class="contact-form-col">
-            <form id="mainContactForm" class="interactive-contact-form" novalidate>
+            <form id="mainContactForm" class="interactive-contact-form" action="https://formsubmit.co/contact@sartajahmed.com" method="POST" novalidate>
+              <!-- FormSubmit Configuration Fields -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" id="formSubject" value="New Project Inquiry - Sartaj Ahmed Portfolio">
+              <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Sartaj Ahmed! I have received your message and will review your project details and get back to you shortly.">
+
               <div class="form-row">
                 <div class="form-field-wrap">
                   <label for="contactName" class="input-label">Hi, I’m</label>
-                  <input type="text" id="contactName" class="custom-input" placeholder="Your name or agency*" required>
+                  <input type="text" id="contactName" name="name" class="custom-input" placeholder="Your name or agency*" required>
                 </div>
                 <div class="form-field-wrap">
                   <label for="contactHelp" class="input-label">I need help with</label>
-                  <input type="text" id="contactHelp" class="custom-input" placeholder="e.g. Website, UI/UX, SaaS..."
-                    required>
+                  <select id="contactHelp" name="service" class="custom-input select-input" required>
+                    <option value="" disabled selected>Select a service*</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Website Design & Development">Website Design & Development</option>
+                    <option value="Webflow Development">Webflow Development</option>
+                    <option value="WordPress Development">WordPress Development</option>
+                    <option value="Mobile App Design">Mobile App Design (iOS & Android)</option>
+                    <option value="SaaS & Dashboard UI Design">SaaS & Dashboard UI Design</option>
+                    <option value="Maintenance & Speed Optimization">Maintenance & Speed Optimization</option>
+                    <option value="Branding & Visual Identity">Branding & Visual Identity</option>
+                    <option value="Other / Custom Inquiry">Other / Custom Inquiry</option>
+                  </select>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-field-wrap">
                   <label for="contactBudget" class="input-label">Budget range</label>
-                  <select id="contactBudget" class="custom-input select-input">
-                    <option value="" disabled selected>Select budget range</option>
+                  <select id="contactBudget" name="budget" class="custom-input select-input" required>
+                    <option value="" disabled selected>Select budget range*</option>
                     <option value="$300 - $500">$300 – $500</option>
                     <option value="$500 - $1,000">$500 – $1,000</option>
                     <option value="$1,000 - $2,500">$1,000 – $2,500</option>
@@ -1348,14 +1364,14 @@
                 </div>
                 <div class="form-field-wrap">
                   <label for="contactEmail" class="input-label">Email</label>
-                  <input type="email" id="contactEmail" class="custom-input" placeholder="Your email address*" required>
+                  <input type="email" id="contactEmail" name="email" class="custom-input" placeholder="Your email address*" required>
                 </div>
               </div>
 
               <div class="form-field-wrap full-width">
                 <label for="contactMessage" class="input-label">Additional info?</label>
-                <textarea id="contactMessage" class="custom-input textarea-input" rows="4"
-                  placeholder="Tell us what you're building, timeline..." required></textarea>
+                <textarea id="contactMessage" name="message" class="custom-input textarea-input" rows="4"
+                  placeholder="Tell us what you're building, timeline, deliverables..." required></textarea>
               </div>
 
               <button type="submit" class="contact-submit-btn magnetic-btn">
@@ -1363,7 +1379,7 @@
                 <span class="btn-arrow">→</span>
               </button>
 
-              <div id="contactFormStatus" class="form-status-box"></div>
+              <div id="contactFormStatus" class="form-status-box" style="display: none;"></div>
             </form>
           </div>
         </div>
@@ -1467,7 +1483,7 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="script.js?v=4.0"></script>
+  <script src="script.js?v=4.2"></script>
 </body>
 
 </html>
