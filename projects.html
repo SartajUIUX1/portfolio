@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Projects — Sartaj Ahmed Portfolio Archive</title>
+  <title>Selected Work &amp; Showcase — Sartaj Ahmed</title>
   <meta name="description" content="Complete portfolio archive of Sartaj Ahmed: Webflow Development, WordPress Development, and UI/UX Design projects.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23ff2a2a'/><text x='50%' y='55%' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='800' font-size='48' dy='.3em'>S</text></svg>">
   
@@ -16,76 +16,103 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   
-  <link rel="stylesheet" href="style.css?v=4.2">
+  <link rel="stylesheet" href="style.css?v=4.5">
 </head>
 <body class="archive-page">
 
-  <!-- ==================== TOP NAVIGATION BAR ==================== -->
+  <!-- ==================== TOP NAVIGATION BAR (IDENTICAL TO HOME) ==================== -->
   <header class="navbar-wrapper">
     <nav class="navbar">
-      <a href="index.html#home" class="brand-logo-link" aria-label="Sartaj Ahmed Home">
-        <span class="brand-logo-text">sartaj®</span>
+      <!-- Brand Logo -->
+      <a href="index.html#vision" class="brand-logo-link" aria-label="Sartaj Ahmed Home">
+        <span class="brand-logo-text">Sartaj Ahmed</span>
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <div class="nav-menu">
         <a href="index.html#home" class="nav-menu-link">
           <span class="nav-menu-dot"></span>
-          <span class="nav-menu-text">Home</span>
+          <span class="nav-text">Home</span>
         </a>
         <a href="projects.html" class="nav-menu-link active">
           <span class="nav-menu-dot"></span>
-          <span class="nav-menu-text">Work</span>
+          <span class="nav-text">Work</span>
         </a>
         <a href="index.html#services" class="nav-menu-link">
           <span class="nav-menu-dot"></span>
-          <span class="nav-menu-text">Services</span>
+          <span class="nav-text">Services</span>
         </a>
         <a href="index.html#process" class="nav-menu-link">
           <span class="nav-menu-dot"></span>
-          <span class="nav-menu-text">Process</span>
+          <span class="nav-text">Process</span>
         </a>
         <a href="index.html#testimonials" class="nav-menu-link">
           <span class="nav-menu-dot"></span>
-          <span class="nav-menu-text">Reviews</span>
+          <span class="nav-text">Reviews</span>
         </a>
         <a href="index.html#faq" class="nav-menu-link">
           <span class="nav-menu-dot"></span>
-          <span class="nav-menu-text">FAQ</span>
+          <span class="nav-text">FAQ</span>
         </a>
       </div>
 
-      <div class="nav-right">
-        <a href="index.html#contact" class="nav-button" style="padding: 12px 32px; font-size: 1rem;">
+      <!-- Right Contact Action & Mobile Menu Button -->
+      <div class="navbar-right-action">
+        <a href="index.html#contact" class="nav-button">
           <span class="nav-button-dot"></span>
           <span class="nav-button-text-wrap">
-            <span class="nav-button-text">Let's Talk</span>
-            <span class="nav-button-text">Let's Talk</span>
+            <span class="nav-button-text">Contact</span>
+            <span class="nav-button-text">Contact</span>
           </span>
         </a>
+
+        <button class="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
   </header>
+
+  <!-- Mobile Drawer Menu (Identical to Home) -->
+  <div class="mobile-nav-drawer" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="projects.html" class="active">Work</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#process">Process</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-button" style="padding: 12px 32px; font-size: 1rem;">
+      <span class="nav-button-dot"></span>
+      <span class="nav-button-text-wrap">
+        <span class="nav-button-text">Let's Talk</span>
+        <span class="nav-button-text">Let's Talk</span>
+      </span>
+    </a>
+  </div>
 
   <!-- ==================== ARCHIVE HERO SECTION ==================== -->
   <section class="archive-hero-section">
     <div class="container">
       <div class="archive-hero-content">
-        <a href="index.html#work" class="back-home-link">← Back to Home</a>
-        <div class="section-badge-pill" id="archiveCategoryBadge">PORTFOLIO ARCHIVE // 47 COMPLETED PROJECTS</div>
         <h1 class="archive-hero-title">
-          Selected Work &amp; <span class="highlight-text">Case Studies</span>
+          Selected Work &amp; <span class="highlight-text">Showcase</span>
         </h1>
         <p class="archive-hero-desc">
           Explore the complete showcase of custom Webflow builds, scalable WordPress platforms, and high-converting UI/UX designs crafted for ambitious brands worldwide.
         </p>
       </div>
 
-      <!-- Category Filter Tabs -->
+      <!-- Modernized Category Filter Tabs -->
       <div class="portfolio-filter-nav archive-filter-nav">
         <div class="filter-tabs-wrapper">
           <button class="filter-tab-btn active" data-filter="all">
             <span class="tab-label">All Works</span>
-            <span class="tab-count">[47]</span>
+            <span class="tab-count">[60]</span>
           </button>
           <button class="filter-tab-btn" data-filter="webflow">
             <span class="tab-label">Webflow</span>
@@ -97,7 +124,7 @@
           </button>
           <button class="filter-tab-btn" data-filter="figma">
             <span class="tab-label">UI/UX &amp; Figma</span>
-            <span class="tab-count">[08]</span>
+            <span class="tab-count">[21]</span>
           </button>
         </div>
       </div>
@@ -108,7 +135,423 @@
   <section class="archive-grid-section">
     <div class="container">
       <div class="archive-projects-grid" id="archiveProjectsGrid">
-        <div class="archive-project-card" data-category="figma" id="card-tennis">
+        <!-- Figma Project: B4 Bakery Web -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-b4-bakery"
+             data-figma-url="https://www.figma.com/design/VVjYVoYVRUVLhAIX3MzHK5/B4-Bakery-Web?node-id=0-1&t=gc3OpyC8N2XigpcA-1"
+             data-figma-embed="https://embed.figma.com/design/VVjYVoYVRUVLhAIX3MzHK5/B4-Bakery-Web?node-id=0-1&embed-host=share"
+             data-figma-title="B4 Bakery Web">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View B4 Bakery Web full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/b4-bakery-card.jpg?v=2" alt="B4 Bakery Web" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">B4 Bakery Web</h3>
+              <p class="archive-project-desc">Artisan Bakery & Cafe E-Commerce UI/UX Platform & Custom Ordering System</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: Sanctum Redesign -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-sanctum-redesign"
+             data-figma-url="https://www.figma.com/design/JUKZQQsBNYzmxf8miDFkqM/Sanctum-Redesign?node-id=0-1&t=f2mXYh4E68Omd7Fx-1"
+             data-figma-embed="https://embed.figma.com/design/JUKZQQsBNYzmxf8miDFkqM/Sanctum-Redesign?node-id=0-1&embed-host=share"
+             data-figma-title="Sanctum Redesign">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View Sanctum Redesign full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/sanctum-redesign-card.jpg?v=2" alt="Sanctum Redesign" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">Sanctum Redesign</h3>
+              <p class="archive-project-desc">Global Mindful Movement, Wellness Studio Platform & Mobile Experience</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: Akash Karia -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-akash-karia"
+             data-figma-url="https://www.figma.com/design/4dt0vwm2hgHAqeDUBBps5s/Akash-Karia?node-id=0-1&t=KaBgdRxf0pj5DX6J-1"
+             data-figma-embed="https://embed.figma.com/design/4dt0vwm2hgHAqeDUBBps5s/Akash-Karia?node-id=0-1&embed-host=share"
+             data-figma-title="Akash Karia">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View Akash Karia full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/akash-karia-card.jpg?v=2" alt="Akash Karia" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">Akash Karia</h3>
+              <p class="archive-project-desc">Keynote Speaker, Author & Executive Coaching Personal Brand Web UI</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: Agricultural Machinery -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-agricultural-machinery"
+             data-figma-url="https://www.figma.com/design/0Itw4qnOzgY7PLDIiMQzVv/Agricultural-Machinery?node-id=0-1&t=xDtZNvrDgep73ptv-1"
+             data-figma-embed="https://embed.figma.com/design/0Itw4qnOzgY7PLDIiMQzVv/Agricultural-Machinery?node-id=0-1&embed-host=share"
+             data-figma-title="Agricultural Machinery">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View Agricultural Machinery full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/agricultural-machinery-card.jpg?v=2" alt="Agricultural Machinery" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">Agricultural Machinery</h3>
+              <p class="archive-project-desc">Heavy Industrial Machinery & Smart Farming Equipment Portal UI/UX</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: National Rail -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-national-rail"
+             data-figma-url="https://www.figma.com/design/3umsAgwRLEoErQ0LpDofiv/National-Rail?node-id=0-1&t=1MSsrrfleb4YTQbk-1"
+             data-figma-embed="https://embed.figma.com/design/3umsAgwRLEoErQ0LpDofiv/National-Rail?node-id=0-1&embed-host=share"
+             data-figma-title="National Rail">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View National Rail full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/national-rail-card.jpg?v=2" alt="National Rail" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">National Rail</h3>
+              <p class="archive-project-desc">High-Speed Rail Transit System, Route Planner & Journey Booking Portal</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: REIC Canada -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-reic-ca"
+             data-figma-url="https://www.figma.com/design/clp6h4vEEmij0r6jgH7Dm6/reic.ca?node-id=0-1&t=aFgyCJUFiQJKdmsk-1"
+             data-figma-embed="https://embed.figma.com/design/clp6h4vEEmij0r6jgH7Dm6/reic.ca?node-id=0-1&embed-host=share"
+             data-figma-title="REIC Canada">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View REIC Canada full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/reic-ca-card.jpg?v=2" alt="REIC Canada" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">REIC Canada</h3>
+              <p class="archive-project-desc">Real Estate Institute of Canada Professional Education & Member Verification</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: UK Dental Specialists -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-ukds"
+             data-figma-url="https://www.figma.com/design/Ht6tvWfQlHaifg8Gzg6gIV/UKDS?node-id=0-1&t=PwurHbw0SeoMYAF9-1"
+             data-figma-embed="https://embed.figma.com/design/Ht6tvWfQlHaifg8Gzg6gIV/UKDS?node-id=0-1&embed-host=share"
+             data-figma-title="UK Dental Specialists">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View UK Dental Specialists full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/ukds-card.jpg?v=2" alt="UK Dental Specialists" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">UK Dental Specialists</h3>
+              <p class="archive-project-desc">Specialist Dental Clinic, Patient Consultation & Treatment Scheduling System</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: Aesthetix -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-aesthetix"
+             data-figma-url="https://www.figma.com/design/H0K0m1omq1GjXnIbG1RiHg/Aesthetix?node-id=0-1&t=sZP8JusjFpD51r1i-1"
+             data-figma-embed="https://embed.figma.com/design/H0K0m1omq1GjXnIbG1RiHg/Aesthetix?node-id=0-1&embed-host=share"
+             data-figma-title="Aesthetix">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View Aesthetix full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/aesthetix-card.jpg?v=2" alt="Aesthetix" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">Aesthetix</h3>
+              <p class="archive-project-desc">High-Converting Aesthetic Clinic & Luxury Cosmetic Care Digital Journey</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: Monies Jewelry -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-monies-jewelry"
+             data-figma-url="https://www.figma.com/design/lQYm1fWgBJKGHrTrKF1SHL/Monies-Jewelry?node-id=0-1&t=iPbm51NjGyAIFsoC-1"
+             data-figma-embed="https://embed.figma.com/design/lQYm1fWgBJKGHrTrKF1SHL/Monies-Jewelry?node-id=0-1&embed-host=share"
+             data-figma-title="Monies Jewelry">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View Monies Jewelry full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/monies-jewelry-card.jpg?v=2" alt="Monies Jewelry" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">Monies Jewelry</h3>
+              <p class="archive-project-desc">Luxury Danish Avant-Garde Jewelry Brand & High-End E-Commerce Experience</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: Artire Automotive -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-artireautomotive"
+             data-figma-url="https://www.figma.com/design/xnCnYG7fE8Z0ylkC3Gqmjl/Artireautomotive?node-id=0-1&t=ALafM5Hj0chlGCi3-1"
+             data-figma-embed="https://embed.figma.com/design/xnCnYG7fE8Z0ylkC3Gqmjl/Artireautomotive?node-id=0-1&embed-host=share"
+             data-figma-title="Artire Automotive">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View Artire Automotive full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/artireautomotive-card.jpg?v=2" alt="Artire Automotive" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">Artire Automotive</h3>
+              <p class="archive-project-desc">Bespoke Automotive Engineering, Performance Tuning & Vehicle Showcase</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: ER Handyman Services -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-erhabdyman"
+             data-figma-url="https://www.figma.com/design/V9wLwy8iNJb6oOiRBHeOiu/Erhabdyman?node-id=0-1&t=J4whEWCXX0KwEr3M-1"
+             data-figma-embed="https://embed.figma.com/design/V9wLwy8iNJb6oOiRBHeOiu/Erhabdyman?node-id=0-1&embed-host=share"
+             data-figma-title="ER Handyman Services">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View ER Handyman Services full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/erhabdyman-card.jpg?v=2" alt="ER Handyman Services" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">ER Handyman Services</h3>
+              <p class="archive-project-desc">On-Demand Residential & Commercial Repair, Contractor Booking Platform</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: Ka'Chava Nutrition -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-untitled-saas"
+             data-figma-url="https://www.figma.com/design/dbTQ5aUlTU50o753qoSLvA/Untitled?node-id=0-1&t=UwttJF0h4KvUBIZq-1"
+             data-figma-embed="https://embed.figma.com/design/dbTQ5aUlTU50o753qoSLvA/Untitled?node-id=0-1&embed-host=share"
+             data-figma-title="Ka'Chava Nutrition">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View Ka'Chava Nutrition full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/untitled-saas-card.jpg?v=2" alt="Ka'Chava Nutrition" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">Ka'Chava Nutrition</h3>
+              <p class="archive-project-desc">Superfood Meal Shake & Wellness Nutrition E-Commerce Landing Experience</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Figma Project: EBP Luxury Travel -->
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-ebp-layout-4"
+             data-figma-url="https://www.figma.com/design/tL298ltmoHi29QAFBjMGsd/EBP---Layout-4?node-id=0-1&t=NtQHWBcUO41F5BWY-1"
+             data-figma-embed="https://embed.figma.com/design/tL298ltmoHi29QAFBjMGsd/EBP---Layout-4?node-id=0-1&embed-host=share"
+             data-figma-title="EBP Luxury Travel">
+          <div class="archive-card-link open-figma-modal-trigger" tabindex="0" role="button" aria-label="View EBP Luxury Travel full interactive preview">
+            <div class="archive-card-media">
+              <img src="images/figma/cards/ebp-layout-4-card.jpg?v=2" alt="EBP Luxury Travel" class="archive-card-img" loading="lazy">
+              <div class="archive-card-overlay"></div>
+              <div class="archive-hover-badge">
+                <span class="hover-badge-text">Full Preview 👁</span>
+              </div>
+              <div class="card-figma-live-tag">
+                <span class="figma-pulse-dot"></span>
+                <span>Figma Prototype</span>
+              </div>
+            </div>
+            <div class="archive-card-info">
+              <div class="archive-tags-row">
+                <span class="tag-pill category-pill">Figma // UI/UX Design</span>
+                <span class="tag-pill year-pill">© 2026</span>
+              </div>
+              <h3 class="archive-project-title">EBP Luxury Travel</h3>
+              <p class="archive-project-desc">Curated World Travel Planning, VIP Expeditions & Itinerary Builder UI</p>
+              <div class="archive-action-link">
+                <span>Interactive Full Preview</span>
+                <span class="link-arrow">⤢</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<div class="archive-project-card" data-category="figma" id="card-tennis">
           <a href="https://www.behance.net/gallery/249720309/Tennis-Padel-Academy-Website-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/de34e0249720309.Y3JvcCwxOTYzLDE1MzYsNDMsMA.jpg" alt="Tennis & Padel Academy" class="archive-card-img" loading="lazy">
@@ -132,7 +575,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="figma" id="card-cmon">
+<div class="archive-project-card" data-category="figma" id="card-cmon">
           <a href="https://www.behance.net/gallery/244758737/CMON-Online-Auction-Marketplace-Web-UIUX-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/8bab6b244758737.Y3JvcCwxNDQwLDExMjYsMCww.jpg" alt="CMON Auction Marketplace" class="archive-card-img" loading="lazy">
@@ -156,7 +599,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="figma" id="card-verdant">
+<div class="archive-project-card" data-category="figma" id="card-verdant">
           <a href="https://www.behance.net/gallery/244726329/Verdant-Supplement-Wellness-Landing-Page" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/ff2f1a244726329.Y3JvcCw1MjU2LDQxMTEsMCwyNDc.jpg" alt="Verdant Wellness" class="archive-card-img" loading="lazy">
@@ -180,7 +623,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="figma" id="card-cudekai">
+<div class="archive-project-card" data-category="figma" id="card-cudekai">
           <a href="https://www.behance.net/gallery/244723199/Saas-product-Website-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/9a987e244723199.Y3JvcCwxMTMzLDg4NiwzMzMsMzMyNQ.png" alt="CudekAI SaaS Platform" class="archive-card-img" loading="lazy">
@@ -204,7 +647,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="figma" id="card-audiodb">
+<div class="archive-project-card" data-category="figma" id="card-audiodb">
           <a href="https://www.behance.net/gallery/244723543/Audio-DB-Website-ui-ux-figma-design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/063716244723543.Y3JvcCwxMzY5LDEwNzEsMzAsMjc.jpg" alt="Audio DB Platform" class="archive-card-img" loading="lazy">
@@ -228,7 +671,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="figma" id="card-agency">
+<div class="archive-project-card" data-category="figma" id="card-agency">
           <a href="https://www.behance.net/gallery/244723023/Marketing-Agency-Website-ui-ux-design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/80b825244723023.Y3JvcCwyNzAwLDIxMTEsMCwyMDE1Ng.png" alt="Marketing Agency Website" class="archive-card-img" loading="lazy">
@@ -252,7 +695,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="figma" id="card-taskapp">
+<div class="archive-project-card" data-category="figma" id="card-taskapp">
           <a href="https://www.behance.net/gallery/239250135/Task-Management-App-and-landing-page-design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/9bbdec239250135.Y3JvcCwxMjc0LDk5Niw3Miw5.jpg" alt="Task Management SaaS" class="archive-card-img" loading="lazy">
@@ -276,7 +719,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="figma" id="card-web3">
+<div class="archive-project-card" data-category="figma" id="card-web3">
           <a href="https://www.behance.net/gallery/232260369/Web3-Blockchain-UI-UX-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/f6667b232260369.Y3JvcCwxNDQwLDExMjYsMCwzNTQ2.jpg" alt="Web3 Blockchain Protocol" class="archive-card-img" loading="lazy">
@@ -300,7 +743,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-wello">
+<div class="archive-project-card" data-category="webflow" id="card-wello">
           <a href="https://wellosolutions.netlify.app/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80" alt="Wello Solutions" class="archive-card-img" loading="lazy">
@@ -324,7 +767,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-cleenup">
+<div class="archive-project-card" data-category="webflow" id="card-cleenup">
           <a href="https://cleenup-de.webflow.io/de/autoreinigung-berlin" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1400&q=80" alt="Cleenup Berlin" class="archive-card-img" loading="lazy">
@@ -348,7 +791,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-ecomswap">
+<div class="archive-project-card" data-category="webflow" id="card-ecomswap">
           <a href="https://www.ecomswap.io/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://iad.microlink.io/5beqgS_rg2ryb3QoTLC5U1CSSlMM-einjlYvxCKCG7_XqjKCTJrV_amqxp_w7GTbhWMb5HB__Z7xrMK8eb-mmg.png" alt="EcomSwap" class="archive-card-img" loading="lazy">
@@ -372,7 +815,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-pluspayments">
+<div class="archive-project-card" data-category="webflow" id="card-pluspayments">
           <a href="https://www.pluspayments.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1400&q=80" alt="Plus Payments" class="archive-card-img" loading="lazy">
@@ -396,7 +839,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-sumano">
+<div class="archive-project-card" data-category="webflow" id="card-sumano">
           <a href="https://www.sumano.design/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" alt="Sumano Design" class="archive-card-img" loading="lazy">
@@ -420,7 +863,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-helix">
+<div class="archive-project-card" data-category="webflow" id="card-helix">
           <a href="https://www.helix-auto.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80" alt="Helix Auto" class="archive-card-img" loading="lazy">
@@ -444,7 +887,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-skyelink">
+<div class="archive-project-card" data-category="webflow" id="card-skyelink">
           <a href="https://skyelinkmedia-305af75.webflow.io/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1400&q=80" alt="SkyeLink Media" class="archive-card-img" loading="lazy">
@@ -468,7 +911,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-phyll">
+<div class="archive-project-card" data-category="webflow" id="card-phyll">
           <a href="https://phyll.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=80" alt="Phyll" class="archive-card-img" loading="lazy">
@@ -492,7 +935,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-whypl">
+<div class="archive-project-card" data-category="webflow" id="card-whypl">
           <a href="https://whypl.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80" alt="Whypl Studio" class="archive-card-img" loading="lazy">
@@ -516,7 +959,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-ibcegroup">
+<div class="archive-project-card" data-category="webflow" id="card-ibcegroup">
           <a href="https://www.ibcegroup.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80" alt="IBCE Group" class="archive-card-img" loading="lazy">
@@ -540,7 +983,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-morningafter">
+<div class="archive-project-card" data-category="webflow" id="card-morningafter">
           <a href="https://morning-after-2025.webflow.io/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1400&q=80" alt="Morning After" class="archive-card-img" loading="lazy">
@@ -564,7 +1007,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-annemariebarton">
+<div class="archive-project-card" data-category="webflow" id="card-annemariebarton">
           <a href="https://annemariebarton.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=80" alt="Anne-Marie Barton" class="archive-card-img" loading="lazy">
@@ -588,7 +1031,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-fintlabs">
+<div class="archive-project-card" data-category="webflow" id="card-fintlabs">
           <a href="https://www.fintlabs.com" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1400&q=80" alt="FintLabs" class="archive-card-img" loading="lazy">
@@ -612,7 +1055,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="webflow" id="card-banganglabs">
+<div class="archive-project-card" data-category="webflow" id="card-banganglabs">
           <a href="https://www.banganglabs.io/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1400&q=80" alt="Bangang Labs" class="archive-card-img" loading="lazy">
@@ -636,7 +1079,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-bonds">
+<div class="archive-project-card" data-category="wordpress" id="card-bonds">
           <a href="https://bondsdobermans.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?auto=format&fit=crop&w=1400&q=80" alt="Bonds Dobermans" class="archive-card-img" loading="lazy">
@@ -660,7 +1103,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-loyaltree">
+<div class="archive-project-card" data-category="wordpress" id="card-loyaltree">
           <a href="https://loyaltree.ca/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1400&q=80" alt="LoyalTree Canada" class="archive-card-img" loading="lazy">
@@ -684,7 +1127,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-meghan">
+<div class="archive-project-card" data-category="wordpress" id="card-meghan">
           <a href="https://meghanclor.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1400&q=80" alt="Meghan Clor" class="archive-card-img" loading="lazy">
@@ -708,7 +1151,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-chilldays">
+<div class="archive-project-card" data-category="wordpress" id="card-chilldays">
           <a href="https://chilldays.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://iad.microlink.io/jchLfFNE3fw9qveWOIy3SOGlJyu5HY_UchnwDIOIn92IZ2RVUteFMUX96YKHcNC5Kynn1IyMtnBI5UUqA23ZQA.png" alt="Chill Days" class="archive-card-img" loading="lazy">
@@ -732,7 +1175,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-mygilgit">
+<div class="archive-project-card" data-category="wordpress" id="card-mygilgit">
           <a href="https://mygilgit.co.uk/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80" alt="My Gilgit" class="archive-card-img" loading="lazy">
@@ -756,7 +1199,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-karve">
+<div class="archive-project-card" data-category="wordpress" id="card-karve">
           <a href="https://karve.club/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=80" alt="Karve Club" class="archive-card-img" loading="lazy">
@@ -780,7 +1223,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-perly">
+<div class="archive-project-card" data-category="wordpress" id="card-perly">
           <a href="https://perlydental.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=80" alt="Perly Dental" class="archive-card-img" loading="lazy">
@@ -804,7 +1247,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-gilley">
+<div class="archive-project-card" data-category="wordpress" id="card-gilley">
           <a href="https://gilley.ai/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=80" alt="Gilley AI" class="archive-card-img" loading="lazy">
@@ -828,7 +1271,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-cacheinvest">
+<div class="archive-project-card" data-category="wordpress" id="card-cacheinvest">
           <a href="https://cacheinvest.com.au/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1400&q=80" alt="Cache Invest" class="archive-card-img" loading="lazy">
@@ -852,7 +1295,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-titoshome">
+<div class="archive-project-card" data-category="wordpress" id="card-titoshome">
           <a href="https://www.titoshomeimprovementinc.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80" alt="Tito's Home Improvement" class="archive-card-img" loading="lazy">
@@ -876,7 +1319,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-currentplumbing">
+<div class="archive-project-card" data-category="wordpress" id="card-currentplumbing">
           <a href="https://currentplumbing.ca/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1400&q=80" alt="Current Plumbing" class="archive-card-img" loading="lazy">
@@ -900,7 +1343,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-ardent">
+<div class="archive-project-card" data-category="wordpress" id="card-ardent">
           <a href="https://ardentintention.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=80" alt="Ardent Intention" class="archive-card-img" loading="lazy">
@@ -924,7 +1367,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-lavenderbush">
+<div class="archive-project-card" data-category="wordpress" id="card-lavenderbush">
           <a href="https://lavenderbush-dotterel-571555.hostingersite.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80" alt="Lavender Bush" class="archive-card-img" loading="lazy">
@@ -948,7 +1391,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-dentalandskin">
+<div class="archive-project-card" data-category="wordpress" id="card-dentalandskin">
           <a href="https://dentalandskin.com.au" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=80" alt="Dental & Skin Clinic" class="archive-card-img" loading="lazy">
@@ -972,7 +1415,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-pharmaventure">
+<div class="archive-project-card" data-category="wordpress" id="card-pharmaventure">
           <a href="https://www.pharmaventure.com" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80" alt="PharmaVenture" class="archive-card-img" loading="lazy">
@@ -996,7 +1439,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-qemaker">
+<div class="archive-project-card" data-category="wordpress" id="card-qemaker">
           <a href="https://www.qemaker.com.au" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80" alt="Qemaker Australia" class="archive-card-img" loading="lazy">
@@ -1020,7 +1463,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-inspirationedu">
+<div class="archive-project-card" data-category="wordpress" id="card-inspirationedu">
           <a href="https://inspirationeducation.co.nz" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80" alt="Inspiration Education" class="archive-card-img" loading="lazy">
@@ -1044,7 +1487,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-kingmakers">
+<div class="archive-project-card" data-category="wordpress" id="card-kingmakers">
           <a href="https://kingmakersarch.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80" alt="Kingmakers Architecture" class="archive-card-img" loading="lazy">
@@ -1068,7 +1511,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-golfplay">
+<div class="archive-project-card" data-category="wordpress" id="card-golfplay">
           <a href="https://golfplay.ca/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1400&q=80" alt="GolfPlay Canada" class="archive-card-img" loading="lazy">
@@ -1092,7 +1535,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-greenbay">
+<div class="archive-project-card" data-category="wordpress" id="card-greenbay">
           <a href="https://greenbay.market/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=80" alt="Green Bay Market" class="archive-card-img" loading="lazy">
@@ -1116,7 +1559,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-timbermann">
+<div class="archive-project-card" data-category="wordpress" id="card-timbermann">
           <a href="https://timbermann-brennholz.de/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80" alt="Timbermann Brennholz" class="archive-card-img" loading="lazy">
@@ -1140,7 +1583,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-bewerbermarkt">
+<div class="archive-project-card" data-category="wordpress" id="card-bewerbermarkt">
           <a href="https://bewebermarkt.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80" alt="Bewerbermarkt" class="archive-card-img" loading="lazy">
@@ -1164,7 +1607,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-aurpay">
+<div class="archive-project-card" data-category="wordpress" id="card-aurpay">
           <a href="https://aurpay.org/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=1400&q=80" alt="Aurpay Protocol" class="archive-card-img" loading="lazy">
@@ -1188,7 +1631,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-xsbyte">
+<div class="archive-project-card" data-category="wordpress" id="card-xsbyte">
           <a href="https://xsbyte.com/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=80" alt="XSByte Hosting" class="archive-card-img" loading="lazy">
@@ -1212,7 +1655,7 @@
           </a>
         </div>
 
-        <div class="archive-project-card" data-category="wordpress" id="card-lavallee">
+<div class="archive-project-card" data-category="wordpress" id="card-lavallee">
           <a href="https://lavallee.ca/" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1400&q=80" alt="Lavallee Advisory" class="archive-card-img" loading="lazy">
@@ -1239,14 +1682,15 @@
     </div>
   </section>
 
-  <!-- ==================== FULL-WIDTH CTA BANNER ==================== -->
+  <!-- ==================== FULL-WIDTH CTA SECTION (IDENTICAL TO HOME) ==================== -->
   <section class="cta-fullwidth-section" id="cta-banner">
     <div class="cta-gradient-overlay"></div>
     <div class="cta-inner-container">
       <div class="section-badge-pill cta-badge">Let's Collaborate</div>
       <h2 class="cta-banner-heading">Ready to Build Something Great?<br><span class="highlight-text">Let's Talk.</span></h2>
       <p class="cta-banner-para">
-        Embark on a Journey with Me: Experience a transformative web design &amp; development partnership that redefines your digital presence.
+        Embark on a Journey with Me: Experience a transformative web design &amp; development partnership that redefines
+        your digital presence.
       </p>
       <div class="cta-banner-action">
         <a href="index.html#contact" class="cta-banner-button magnetic-btn">
@@ -1257,8 +1701,9 @@
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- ==================== FOOTER (IDENTICAL TO HOME) ==================== -->
   <footer class="section footer-section">
+    <!-- Main Footer Links & Copyright -->
     <div class="container footer-bottom-container">
       <div class="footer-columns-grid">
         <div class="footer-col-brand">
@@ -1266,9 +1711,11 @@
             <span class="brand-logo-text">sartaj®</span>
           </a>
           <p class="footer-brand-bio">
-            Creating modern, high-performing digital products, from websites to mobile apps, designed to captivate users and deliver business growth.
+            Creating modern, high-performing digital products, from websites to mobile apps, designed to captivate users
+            and deliver business growth.
           </p>
         </div>
+
         <div class="footer-col-nav">
           <div class="footer-nav-title">Navigation</div>
           <ul class="footer-links-list">
@@ -1280,42 +1727,93 @@
             <li><a href="index.html#faq">FAQ</a></li>
           </ul>
         </div>
+
         <div class="footer-col-nav">
           <div class="footer-nav-title">Socials</div>
           <ul class="footer-links-list">
-            <li><a href="https://www.linkedin.com/in/sartajahmedsoomro046/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
-            <li><a href="https://www.behance.net/asartaj140" target="_blank" rel="noopener noreferrer">Behance ↗</a></li>
-            <li><a href="https://www.instagram.com/sartajuiux/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
-            <li><a href="https://www.facebook.com/sartajuiux" target="_blank" rel="noopener noreferrer">Facebook ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/sartajahmedsoomro046/" target="_blank"
+                rel="noopener noreferrer">LinkedIn ↗</a></li>
+            <li><a href="https://www.behance.net/asartaj140" target="_blank" rel="noopener noreferrer">Behance ↗</a>
+            </li>
+            <li><a href="https://www.instagram.com/sartajuiux/" target="_blank" rel="noopener noreferrer">Instagram
+                ↗</a></li>
+            <li><a href="https://www.facebook.com/sartajuiux" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            </li>
             <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
           </ul>
         </div>
+
         <div class="footer-col-newsletter">
           <div class="footer-nav-title">Stay Connected</div>
           <p class="footer-news-text">Direct email for proposals &amp; collaborations:</p>
           <a href="mailto:contact@sartajahmed.com" class="footer-email-link">contact@sartajahmed.com</a>
         </div>
       </div>
+
       <div class="footer-legal-bar">
         <div class="footer-legal-copy">© 2026 Sartaj Ahmed Soomro. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Terms &amp; Conditions</a>
+          <span class="sep">•</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Giant Running Watermark Marquee -->
+    <div class="footer-bottom-marquee" aria-hidden="true">
+      <div class="footer-bottom-text-wrapper">
+        <h1 class="footer-bottom-text">SARTAJ®</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">UI/UX DESIGN</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">DEVELOPMENT</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">WEBFLOW</h1>
+        <h1 class="footer-bottom-text">—</h1>
+        <h1 class="footer-bottom-text">WORDPRESS</h1>
+        <h1 class="footer-bottom-text">—</h1>
       </div>
     </div>
   </footer>
 
-  <!-- Script for Projects Archive Page -->
+  <!-- ==================== FIGMA FULL PREVIEW INTERACTIVE MODAL ==================== -->
+  <div class="figma-modal-overlay" id="figmaModalOverlay" aria-hidden="true">
+    <div class="figma-modal-container" role="dialog" aria-modal="true" aria-labelledby="modalFigmaTitle">
+      <div class="figma-modal-header">
+        <div class="figma-modal-title-group">
+          <span class="modal-figma-badge">
+            <span class="figma-pulse-dot"></span>
+            <span>Figma Canvas</span>
+          </span>
+          <h3 class="figma-modal-title" id="modalFigmaTitle">Project Title</h3>
+        </div>
+        <div class="figma-modal-controls">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="figma-modal-btn btn-open-figma" id="modalOpenFigmaBtn">
+            <span>Open in Figma</span>
+            <span>↗</span>
+          </a>
+          <button class="figma-modal-btn btn-close-modal" id="modalCloseBtn" aria-label="Close Preview">✕</button>
+        </div>
+      </div>
+      <div class="figma-modal-body">
+        <div class="figma-modal-loader" id="modalLoader">
+          <div class="figma-spinner"></div>
+          <div class="figma-modal-loader-text">Loading Interactive Figma Prototype...</div>
+        </div>
+        <iframe class="figma-embed-frame" id="figmaEmbedFrame" src="" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shared Scripts -->
+  <script src="script.js?v=4.5"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // 1. Category Filtering
       const tabBtns = document.querySelectorAll('.archive-filter-nav .filter-tab-btn');
       const cards = document.querySelectorAll('.archive-project-card');
-      const badge = document.getElementById('archiveCategoryBadge');
-
-      const badgeTitles = {
-        all: 'FULL PORTFOLIO ARCHIVE // 47 PROJECTS',
-        webflow: 'WEBFLOW DEVELOPMENT PORTFOLIO // 14 PROJECTS',
-        wordpress: 'WORDPRESS DEVELOPMENT PORTFOLIO // 25 PROJECTS',
-        figma: 'FIGMA & UI/UX DESIGN PORTFOLIO // 08 PROJECTS',
-        uiux: 'FIGMA & UI/UX DESIGN PORTFOLIO // 08 PROJECTS'
-      };
 
       function filterArchive(cat) {
         const targetCat = (cat === 'uiux') ? 'figma' : cat;
@@ -1325,10 +1823,6 @@
           btn.classList.toggle('active', btnCat === targetCat || (targetCat === 'figma' && btnCat === 'uiux'));
         });
 
-        if (badge && (badgeTitles[targetCat] || badgeTitles[cat])) {
-          badge.textContent = badgeTitles[targetCat] || badgeTitles[cat];
-        }
-
         cards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
           const isMatch = targetCat === 'all' || 
@@ -1337,7 +1831,7 @@
                           (targetCat === 'uiux' && (cardCat === 'figma' || cardCat === 'uiux'));
 
           if (isMatch) {
-            card.style.display = 'block';
+            card.style.display = 'flex';
             card.style.opacity = '1';
           } else {
             card.style.display = 'none';
@@ -1360,7 +1854,77 @@
           filterArchive(selectedCat);
         });
       });
+
+      // 2. Figma Full Preview Modal Logic
+      const modalOverlay = document.getElementById('figmaModalOverlay');
+      const modalTitle = document.getElementById('modalFigmaTitle');
+      const modalOpenFigmaBtn = document.getElementById('modalOpenFigmaBtn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const embedFrame = document.getElementById('figmaEmbedFrame');
+      const modalLoader = document.getElementById('modalLoader');
+
+      function openFigmaModal(title, figmaUrl, embedUrl) {
+        if (!modalOverlay || !embedFrame) return;
+        
+        modalTitle.textContent = title || 'Figma Project Preview';
+        modalOpenFigmaBtn.href = figmaUrl || '#';
+        
+        // Show loader, reset iframe
+        modalLoader.classList.remove('hidden');
+        embedFrame.src = embedUrl;
+
+        embedFrame.onload = () => {
+          modalLoader.classList.add('hidden');
+        };
+
+        // Fallback hide loader after 5s if iframe onload doesn't fire due to cross-origin
+        setTimeout(() => {
+          modalLoader.classList.add('hidden');
+        }, 5000);
+
+        modalOverlay.classList.add('open');
+        modalOverlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeFigmaModal() {
+        if (!modalOverlay || !embedFrame) return;
+        modalOverlay.classList.remove('open');
+        modalOverlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        embedFrame.src = '';
+      }
+
+      // Attach click listeners to Figma cards
+      document.querySelectorAll('.archive-project-card[data-is-figma="true"]').forEach(card => {
+        card.addEventListener('click', (e) => {
+          e.preventDefault();
+          const title = card.getAttribute('data-figma-title');
+          const figmaUrl = card.getAttribute('data-figma-url');
+          const embedUrl = card.getAttribute('data-figma-embed');
+          openFigmaModal(title, figmaUrl, embedUrl);
+        });
+      });
+
+      if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeFigmaModal);
+      }
+
+      if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+          if (e.target === modalOverlay) {
+            closeFigmaModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlay && modalOverlay.classList.contains('open')) {
+          closeFigmaModal();
+        }
+      });
     });
   </script>
+
 </body>
 </html>
