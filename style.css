@@ -4304,7 +4304,8 @@ img {
   margin-top: 20px;
   margin-bottom: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   z-index: 2;
 }
@@ -4357,6 +4358,100 @@ img {
   font-size: 0.82rem;
   opacity: 0.85;
   font-family: var(--font-mono);
+}
+
+/* UI/UX & Figma Sub-Category Filter Nav */
+.sub-filter-nav {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  pointer-events: none;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s ease,
+              margin-top 0.35s ease;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sub-filter-nav.is-visible {
+  max-height: 140px;
+  opacity: 1;
+  margin-top: 16px;
+  pointer-events: auto;
+}
+
+.sub-filter-tabs-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 16, 16, 0.92);
+  padding: 6px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 31, 31, 0.28);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 31, 31, 0.12);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sub-filter-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 18px;
+  border-radius: var(--radius-full);
+  background: transparent;
+  border: 1px solid transparent;
+  color: #a3a3a3;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.sub-filter-tab-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.sub-filter-tab-btn.active {
+  background: rgba(255, 31, 31, 0.18);
+  color: #ffffff;
+  border-color: rgba(255, 31, 31, 0.55);
+  box-shadow: 0 4px 16px rgba(255, 31, 31, 0.3);
+}
+
+.sub-filter-tab-btn .sub-tab-count {
+  font-size: 0.76rem;
+  opacity: 0.82;
+  font-family: var(--font-mono);
+  color: #ff5555;
+}
+
+.sub-filter-tab-btn.active .sub-tab-count {
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+/* Card Smooth Transition on Filter */
+.archive-project-card.card-fade-in {
+  animation: projectCardFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes projectCardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Projects Grid */
@@ -4699,6 +4794,109 @@ img {
   display: block;
 }
 
+/* Floating Zoom Pill (leaves bottom-right Figma zoom controls completely unobstructed) */
+.figma-zoom-pill-float {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+.figma-zoom-pill {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(18, 18, 18, 0.90);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #f0f0f0;
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 31, 31, 0.12);
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.figma-zoom-pill:hover {
+  background: rgba(26, 26, 26, 0.98);
+  border-color: rgba(255, 31, 31, 0.5);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 31, 31, 0.22);
+}
+
+.figma-kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 5px;
+  padding: 1px 7px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.mouse-scroll-icon {
+  flex-shrink: 0;
+  color: #ff2a2a;
+}
+
+.mouse-wheel-dot {
+  animation: mouseWheelScroll 1.6s infinite cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@keyframes mouseWheelScroll {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(3px); opacity: 0.25; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Floating Center Hint on Canvas on Open */
+.figma-center-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.92);
+  background: rgba(18, 18, 18, 0.94);
+  border: 1px solid rgba(255, 31, 31, 0.4);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(255, 31, 31, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #ffffff;
+  padding: 14px 26px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 20;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.figma-center-hint.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .figma-modal-loader {
   position: absolute;
   inset: 0;
@@ -4749,6 +4947,55 @@ img {
   .figma-modal-container {
     height: 96vh;
     padding: 0;
+  }
+  .figma-zoom-pill-float {
+    bottom: 18px;
+  }
+  .figma-zoom-pill {
+    font-size: 0.78rem;
+    padding: 6px 14px;
+    gap: 7px;
+  }
+  .sub-filter-tabs-wrapper {
+    padding: 5px 8px;
+    gap: 4px;
+  }
+  .sub-filter-tab-btn {
+    padding: 6px 14px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sub-filter-nav.is-visible {
+    max-height: 220px;
+  }
+  .sub-filter-tabs-wrapper {
+    border-radius: 16px;
+    padding: 5px;
+    gap: 4px;
+  }
+  .sub-filter-tab-btn {
+    padding: 5px 10px;
+    font-size: 0.76rem;
+  }
+  .figma-zoom-pill-float {
+    bottom: 12px;
+    width: 92%;
+  }
+  .figma-zoom-pill {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .figma-center-hint {
+    padding: 10px 16px;
+    font-size: 0.82rem;
+    max-width: 90%;
+    text-align: center;
   }
 }
 

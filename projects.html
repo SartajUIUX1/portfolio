@@ -16,7 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   
-  <link rel="stylesheet" href="style.css?v=4.5">
+  <link rel="stylesheet" href="style.css?v=4.8">
 </head>
 <body class="archive-page">
 
@@ -127,6 +127,32 @@
             <span class="tab-count">[21]</span>
           </button>
         </div>
+
+        <!-- UI/UX & Figma Sub-Category Filter Nav -->
+        <div class="sub-filter-nav figma-sub-nav" id="figmaSubNav" aria-label="UI/UX &amp; Figma Subcategories">
+          <div class="sub-filter-tabs-wrapper">
+            <button class="sub-filter-tab-btn active" data-subfilter="all-figma">
+              <span class="sub-tab-label">All UI/UX</span>
+              <span class="sub-tab-count">[21]</span>
+            </button>
+            <button class="sub-filter-tab-btn" data-subfilter="website-ui">
+              <span class="sub-tab-label">Website UI/UX</span>
+              <span class="sub-tab-count">[19]</span>
+            </button>
+            <button class="sub-filter-tab-btn" data-subfilter="app-ui">
+              <span class="sub-tab-label">App UI/UX</span>
+              <span class="sub-tab-count">[6]</span>
+            </button>
+            <button class="sub-filter-tab-btn" data-subfilter="dashboards">
+              <span class="sub-tab-label">Dashboards</span>
+              <span class="sub-tab-count">[7]</span>
+            </button>
+            <button class="sub-filter-tab-btn" data-subfilter="saas">
+              <span class="sub-tab-label">SAAS</span>
+              <span class="sub-tab-count">[7]</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -136,7 +162,7 @@
     <div class="container">
       <div class="archive-projects-grid" id="archiveProjectsGrid">
         <!-- Figma Project: B4 Bakery Web -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-b4-bakery"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-b4-bakery" data-subcategory="website-ui"
              data-figma-url="https://www.figma.com/design/VVjYVoYVRUVLhAIX3MzHK5/B4-Bakery-Web?node-id=0-1&t=gc3OpyC8N2XigpcA-1"
              data-figma-embed="https://embed.figma.com/design/VVjYVoYVRUVLhAIX3MzHK5/B4-Bakery-Web?node-id=0-1&embed-host=share"
              data-figma-title="B4 Bakery Web">
@@ -168,7 +194,7 @@
         </div>
 
         <!-- Figma Project: Sanctum Redesign -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-sanctum-redesign"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-sanctum-redesign" data-subcategory="app-ui website-ui"
              data-figma-url="https://www.figma.com/design/JUKZQQsBNYzmxf8miDFkqM/Sanctum-Redesign?node-id=0-1&t=f2mXYh4E68Omd7Fx-1"
              data-figma-embed="https://embed.figma.com/design/JUKZQQsBNYzmxf8miDFkqM/Sanctum-Redesign?node-id=0-1&embed-host=share"
              data-figma-title="Sanctum Redesign">
@@ -200,7 +226,7 @@
         </div>
 
         <!-- Figma Project: Akash Karia -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-akash-karia"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-akash-karia" data-subcategory="website-ui"
              data-figma-url="https://www.figma.com/design/4dt0vwm2hgHAqeDUBBps5s/Akash-Karia?node-id=0-1&t=KaBgdRxf0pj5DX6J-1"
              data-figma-embed="https://embed.figma.com/design/4dt0vwm2hgHAqeDUBBps5s/Akash-Karia?node-id=0-1&embed-host=share"
              data-figma-title="Akash Karia">
@@ -232,7 +258,7 @@
         </div>
 
         <!-- Figma Project: Agricultural Machinery -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-agricultural-machinery"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-agricultural-machinery" data-subcategory="dashboards saas website-ui"
              data-figma-url="https://www.figma.com/design/0Itw4qnOzgY7PLDIiMQzVv/Agricultural-Machinery?node-id=0-1&t=xDtZNvrDgep73ptv-1"
              data-figma-embed="https://embed.figma.com/design/0Itw4qnOzgY7PLDIiMQzVv/Agricultural-Machinery?node-id=0-1&embed-host=share"
              data-figma-title="Agricultural Machinery">
@@ -264,7 +290,7 @@
         </div>
 
         <!-- Figma Project: National Rail -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-national-rail"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-national-rail" data-subcategory="app-ui website-ui"
              data-figma-url="https://www.figma.com/design/3umsAgwRLEoErQ0LpDofiv/National-Rail?node-id=0-1&t=1MSsrrfleb4YTQbk-1"
              data-figma-embed="https://embed.figma.com/design/3umsAgwRLEoErQ0LpDofiv/National-Rail?node-id=0-1&embed-host=share"
              data-figma-title="National Rail">
@@ -296,7 +322,7 @@
         </div>
 
         <!-- Figma Project: REIC Canada -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-reic-ca"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-reic-ca" data-subcategory="website-ui dashboards"
              data-figma-url="https://www.figma.com/design/clp6h4vEEmij0r6jgH7Dm6/reic.ca?node-id=0-1&t=aFgyCJUFiQJKdmsk-1"
              data-figma-embed="https://embed.figma.com/design/clp6h4vEEmij0r6jgH7Dm6/reic.ca?node-id=0-1&embed-host=share"
              data-figma-title="REIC Canada">
@@ -328,7 +354,7 @@
         </div>
 
         <!-- Figma Project: UK Dental Specialists -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-ukds"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-ukds" data-subcategory="website-ui"
              data-figma-url="https://www.figma.com/design/Ht6tvWfQlHaifg8Gzg6gIV/UKDS?node-id=0-1&t=PwurHbw0SeoMYAF9-1"
              data-figma-embed="https://embed.figma.com/design/Ht6tvWfQlHaifg8Gzg6gIV/UKDS?node-id=0-1&embed-host=share"
              data-figma-title="UK Dental Specialists">
@@ -360,7 +386,7 @@
         </div>
 
         <!-- Figma Project: Aesthetix -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-aesthetix"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-aesthetix" data-subcategory="website-ui"
              data-figma-url="https://www.figma.com/design/H0K0m1omq1GjXnIbG1RiHg/Aesthetix?node-id=0-1&t=sZP8JusjFpD51r1i-1"
              data-figma-embed="https://embed.figma.com/design/H0K0m1omq1GjXnIbG1RiHg/Aesthetix?node-id=0-1&embed-host=share"
              data-figma-title="Aesthetix">
@@ -392,7 +418,7 @@
         </div>
 
         <!-- Figma Project: Monies Jewelry -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-monies-jewelry"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-monies-jewelry" data-subcategory="website-ui"
              data-figma-url="https://www.figma.com/design/lQYm1fWgBJKGHrTrKF1SHL/Monies-Jewelry?node-id=0-1&t=iPbm51NjGyAIFsoC-1"
              data-figma-embed="https://embed.figma.com/design/lQYm1fWgBJKGHrTrKF1SHL/Monies-Jewelry?node-id=0-1&embed-host=share"
              data-figma-title="Monies Jewelry">
@@ -424,7 +450,7 @@
         </div>
 
         <!-- Figma Project: Artire Automotive -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-artireautomotive"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-artireautomotive" data-subcategory="website-ui"
              data-figma-url="https://www.figma.com/design/xnCnYG7fE8Z0ylkC3Gqmjl/Artireautomotive?node-id=0-1&t=ALafM5Hj0chlGCi3-1"
              data-figma-embed="https://embed.figma.com/design/xnCnYG7fE8Z0ylkC3Gqmjl/Artireautomotive?node-id=0-1&embed-host=share"
              data-figma-title="Artire Automotive">
@@ -456,7 +482,7 @@
         </div>
 
         <!-- Figma Project: ER Handyman Services -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-erhabdyman"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-erhabdyman" data-subcategory="app-ui website-ui"
              data-figma-url="https://www.figma.com/design/V9wLwy8iNJb6oOiRBHeOiu/Erhabdyman?node-id=0-1&t=J4whEWCXX0KwEr3M-1"
              data-figma-embed="https://embed.figma.com/design/V9wLwy8iNJb6oOiRBHeOiu/Erhabdyman?node-id=0-1&embed-host=share"
              data-figma-title="ER Handyman Services">
@@ -488,7 +514,7 @@
         </div>
 
         <!-- Figma Project: Ka'Chava Nutrition -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-untitled-saas"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-untitled-saas" data-subcategory="website-ui"
              data-figma-url="https://www.figma.com/design/dbTQ5aUlTU50o753qoSLvA/Untitled?node-id=0-1&t=UwttJF0h4KvUBIZq-1"
              data-figma-embed="https://embed.figma.com/design/dbTQ5aUlTU50o753qoSLvA/Untitled?node-id=0-1&embed-host=share"
              data-figma-title="Ka'Chava Nutrition">
@@ -520,7 +546,7 @@
         </div>
 
         <!-- Figma Project: EBP Luxury Travel -->
-        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-ebp-layout-4"
+        <div class="archive-project-card" data-category="figma" data-is-figma="true" id="card-ebp-layout-4" data-subcategory="website-ui saas"
              data-figma-url="https://www.figma.com/design/tL298ltmoHi29QAFBjMGsd/EBP---Layout-4?node-id=0-1&t=NtQHWBcUO41F5BWY-1"
              data-figma-embed="https://embed.figma.com/design/tL298ltmoHi29QAFBjMGsd/EBP---Layout-4?node-id=0-1&embed-host=share"
              data-figma-title="EBP Luxury Travel">
@@ -551,7 +577,7 @@
           </div>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-tennis">
+<div class="archive-project-card" data-category="figma" id="card-tennis" data-subcategory="website-ui app-ui">
           <a href="https://www.behance.net/gallery/249720309/Tennis-Padel-Academy-Website-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/de34e0249720309.Y3JvcCwxOTYzLDE1MzYsNDMsMA.jpg" alt="Tennis & Padel Academy" class="archive-card-img" loading="lazy">
@@ -575,7 +601,7 @@
           </a>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-cmon">
+<div class="archive-project-card" data-category="figma" id="card-cmon" data-subcategory="dashboards saas website-ui">
           <a href="https://www.behance.net/gallery/244758737/CMON-Online-Auction-Marketplace-Web-UIUX-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/8bab6b244758737.Y3JvcCwxNDQwLDExMjYsMCww.jpg" alt="CMON Auction Marketplace" class="archive-card-img" loading="lazy">
@@ -599,7 +625,7 @@
           </a>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-verdant">
+<div class="archive-project-card" data-category="figma" id="card-verdant" data-subcategory="website-ui">
           <a href="https://www.behance.net/gallery/244726329/Verdant-Supplement-Wellness-Landing-Page" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/ff2f1a244726329.Y3JvcCw1MjU2LDQxMTEsMCwyNDc.jpg" alt="Verdant Wellness" class="archive-card-img" loading="lazy">
@@ -623,7 +649,7 @@
           </a>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-cudekai">
+<div class="archive-project-card" data-category="figma" id="card-cudekai" data-subcategory="saas dashboards website-ui">
           <a href="https://www.behance.net/gallery/244723199/Saas-product-Website-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/9a987e244723199.Y3JvcCwxMTMzLDg4NiwzMzMsMzMyNQ.png" alt="CudekAI SaaS Platform" class="archive-card-img" loading="lazy">
@@ -647,7 +673,7 @@
           </a>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-audiodb">
+<div class="archive-project-card" data-category="figma" id="card-audiodb" data-subcategory="saas dashboards app-ui">
           <a href="https://www.behance.net/gallery/244723543/Audio-DB-Website-ui-ux-figma-design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/063716244723543.Y3JvcCwxMzY5LDEwNzEsMzAsMjc.jpg" alt="Audio DB Platform" class="archive-card-img" loading="lazy">
@@ -671,7 +697,7 @@
           </a>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-agency">
+<div class="archive-project-card" data-category="figma" id="card-agency" data-subcategory="website-ui">
           <a href="https://www.behance.net/gallery/244723023/Marketing-Agency-Website-ui-ux-design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/80b825244723023.Y3JvcCwyNzAwLDIxMTEsMCwyMDE1Ng.png" alt="Marketing Agency Website" class="archive-card-img" loading="lazy">
@@ -695,7 +721,7 @@
           </a>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-taskapp">
+<div class="archive-project-card" data-category="figma" id="card-taskapp" data-subcategory="saas app-ui dashboards">
           <a href="https://www.behance.net/gallery/239250135/Task-Management-App-and-landing-page-design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/9bbdec239250135.Y3JvcCwxMjc0LDk5Niw3Miw5.jpg" alt="Task Management SaaS" class="archive-card-img" loading="lazy">
@@ -719,7 +745,7 @@
           </a>
         </div>
 
-<div class="archive-project-card" data-category="figma" id="card-web3">
+<div class="archive-project-card" data-category="figma" id="card-web3" data-subcategory="saas dashboards website-ui">
           <a href="https://www.behance.net/gallery/232260369/Web3-Blockchain-UI-UX-Design" target="_blank" rel="noopener noreferrer" class="archive-card-link">
             <div class="archive-card-media">
               <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/f6667b232260369.Y3JvcCwxNDQwLDExMjYsMCwzNTQ2.jpg" alt="Web3 Blockchain Protocol" class="archive-card-img" loading="lazy">
@@ -1789,10 +1815,6 @@
           <h3 class="figma-modal-title" id="modalFigmaTitle">Project Title</h3>
         </div>
         <div class="figma-modal-controls">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="figma-modal-btn btn-open-figma" id="modalOpenFigmaBtn">
-            <span>Open in Figma</span>
-            <span>↗</span>
-          </a>
           <button class="figma-modal-btn btn-close-modal" id="modalCloseBtn" aria-label="Close Preview">✕</button>
         </div>
       </div>
@@ -1801,7 +1823,25 @@
           <div class="figma-spinner"></div>
           <div class="figma-modal-loader-text">Loading Interactive Figma Prototype...</div>
         </div>
+        <!-- Floating center hint when modal opens -->
+        <div class="figma-center-hint" id="figmaCenterHint" aria-live="polite">
+          <svg class="mouse-scroll-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="3" width="12" height="18" rx="6"></rect>
+            <line x1="12" y1="7" x2="12" y2="11" class="mouse-wheel-dot"></line>
+          </svg>
+          <span>Use <kbd class="figma-kbd">Ctrl</kbd> + scroll for zoom in and zoom out</span>
+        </div>
         <iframe class="figma-embed-frame" id="figmaEmbedFrame" src="" allowfullscreen></iframe>
+        <!-- Floating center zoom pill (avoids obstructing Figma bottom-right zoom controls) -->
+        <div class="figma-zoom-pill-float" role="status">
+          <div class="figma-zoom-pill">
+            <svg class="mouse-scroll-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="3" width="12" height="18" rx="6"></rect>
+              <line x1="12" y1="7" x2="12" y2="11" class="mouse-wheel-dot"></line>
+            </svg>
+            <span>Use <kbd class="figma-kbd">Ctrl</kbd> + scroll for zoom in and zoom out</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1811,67 +1851,127 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Category Filtering
+      // 1. Category & Subcategory Filtering
       const tabBtns = document.querySelectorAll('.archive-filter-nav .filter-tab-btn');
+      const subFilterNav = document.getElementById('figmaSubNav');
+      const subTabBtns = document.querySelectorAll('.sub-filter-nav .sub-filter-tab-btn');
       const cards = document.querySelectorAll('.archive-project-card');
 
-      function filterArchive(cat) {
-        const targetCat = (cat === 'uiux') ? 'figma' : cat;
+      let currentCat = 'all';
+      let currentSubCat = 'all-figma';
 
+      function filterArchive(cat, subCat) {
+        if (cat !== undefined) {
+          currentCat = (cat === 'uiux') ? 'figma' : cat;
+        }
+        if (subCat !== undefined) {
+          currentSubCat = subCat;
+        } else if (currentCat !== 'figma') {
+          currentSubCat = 'all-figma';
+        }
+
+        // Update Main Category Tabs
         tabBtns.forEach(btn => {
           const btnCat = btn.getAttribute('data-filter');
-          btn.classList.toggle('active', btnCat === targetCat || (targetCat === 'figma' && btnCat === 'uiux'));
+          btn.classList.toggle('active', btnCat === currentCat || (currentCat === 'figma' && btnCat === 'uiux'));
         });
 
+        // Expand/Collapse Subcategory Filter Nav
+        if (currentCat === 'figma') {
+          if (subFilterNav) subFilterNav.classList.add('is-visible');
+        } else {
+          if (subFilterNav) subFilterNav.classList.remove('is-visible');
+        }
+
+        // Update Subcategory Tabs
+        subTabBtns.forEach(btn => {
+          const btnSub = btn.getAttribute('data-subfilter');
+          btn.classList.toggle('active', btnSub === currentSubCat);
+        });
+
+        // Filter Grid Cards with Smooth Fade Transition
         cards.forEach(card => {
           const cardCat = card.getAttribute('data-category');
-          const isMatch = targetCat === 'all' || 
-                          cardCat === targetCat || 
-                          (targetCat === 'figma' && (cardCat === 'figma' || cardCat === 'uiux')) ||
-                          (targetCat === 'uiux' && (cardCat === 'figma' || cardCat === 'uiux'));
+          const isFigma = (cardCat === 'figma' || cardCat === 'uiux' || card.getAttribute('data-is-figma') === 'true');
+          const subcatAttr = card.getAttribute('data-subcategory') || '';
+          const cardSubcats = subcatAttr.toLowerCase().split(/\s+/);
+          
+          let isMatch = false;
+
+          if (currentCat === 'all') {
+            isMatch = true;
+          } else if (currentCat === 'figma') {
+            if (isFigma) {
+              if (currentSubCat === 'all-figma') {
+                isMatch = true;
+              } else {
+                isMatch = cardSubcats.includes(currentSubCat);
+              }
+            }
+          } else {
+            isMatch = (cardCat === currentCat);
+          }
 
           if (isMatch) {
             card.style.display = 'flex';
-            card.style.opacity = '1';
+            card.classList.remove('card-fade-in');
+            void card.offsetWidth;
+            card.classList.add('card-fade-in');
           } else {
             card.style.display = 'none';
-            card.style.opacity = '0';
           }
         });
       }
 
-      // Read ?category=... from URL
+      // Read ?category=... & ?sub=... from URL
       const urlParams = new URLSearchParams(window.location.search);
       const initialCat = urlParams.get('category') || 'all';
-      filterArchive(initialCat);
+      const initialSub = urlParams.get('sub') || 'all-figma';
+      filterArchive(initialCat, initialSub);
 
-      // Handle Tab Clicks
+      // Handle Main Category Tab Clicks
       tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           const selectedCat = btn.getAttribute('data-filter');
           const newUrl = window.location.pathname + '?category=' + selectedCat;
           window.history.pushState({ path: newUrl }, '', newUrl);
-          filterArchive(selectedCat);
+          filterArchive(selectedCat, 'all-figma');
+        });
+      });
+
+      // Handle Subcategory Tab Clicks
+      subTabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const selectedSub = btn.getAttribute('data-subfilter');
+          const newUrl = window.location.pathname + '?category=figma&sub=' + selectedSub;
+          window.history.pushState({ path: newUrl }, '', newUrl);
+          filterArchive('figma', selectedSub);
         });
       });
 
       // 2. Figma Full Preview Modal Logic
       const modalOverlay = document.getElementById('figmaModalOverlay');
       const modalTitle = document.getElementById('modalFigmaTitle');
-      const modalOpenFigmaBtn = document.getElementById('modalOpenFigmaBtn');
       const modalCloseBtn = document.getElementById('modalCloseBtn');
       const embedFrame = document.getElementById('figmaEmbedFrame');
       const modalLoader = document.getElementById('modalLoader');
+      const figmaCenterHint = document.getElementById('figmaCenterHint');
+      let hintTimeout = null;
 
       function openFigmaModal(title, figmaUrl, embedUrl) {
         if (!modalOverlay || !embedFrame) return;
         
         modalTitle.textContent = title || 'Figma Project Preview';
-        modalOpenFigmaBtn.href = figmaUrl || '#';
         
         // Show loader, reset iframe
         modalLoader.classList.remove('hidden');
-        embedFrame.src = embedUrl;
+        
+        // Ensure hide-ui=1 parameter is included to strip default Figma UI
+        let finalEmbedUrl = embedUrl || '';
+        if (finalEmbedUrl && !finalEmbedUrl.includes('hide-ui=')) {
+          finalEmbedUrl += (finalEmbedUrl.includes('?') ? '&' : '?') + 'hide-ui=1';
+        }
+        embedFrame.src = finalEmbedUrl;
 
         embedFrame.onload = () => {
           modalLoader.classList.add('hidden');
@@ -1881,6 +1981,15 @@
         setTimeout(() => {
           modalLoader.classList.add('hidden');
         }, 5000);
+
+        // Animate in center zoom hint for 3.5s then fade out
+        if (figmaCenterHint) {
+          clearTimeout(hintTimeout);
+          figmaCenterHint.classList.add('show');
+          hintTimeout = setTimeout(() => {
+            figmaCenterHint.classList.remove('show');
+          }, 3500);
+        }
 
         modalOverlay.classList.add('open');
         modalOverlay.setAttribute('aria-hidden', 'false');
@@ -1893,6 +2002,10 @@
         modalOverlay.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
         embedFrame.src = '';
+        if (figmaCenterHint) {
+          clearTimeout(hintTimeout);
+          figmaCenterHint.classList.remove('show');
+        }
       }
 
       // Attach click listeners to Figma cards
